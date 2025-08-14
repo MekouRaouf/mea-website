@@ -75,7 +75,7 @@ const About = () => {
                 <span className="text-green-600"> Sustainable Future</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8">
-                SolarFlow is revolutionizing the renewable energy industry by making solar power accessible 
+                MEA-Energy is revolutionizing the renewable energy industry by making solar power accessible 
                 to everyone through our innovative PayAsYouGo model. We believe clean energy shouldn't be 
                 a luxury – it should be a right.
               </p>

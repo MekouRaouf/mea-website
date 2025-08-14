@@ -6,11 +6,11 @@ const Team = () => {
     {
       name: 'Sarah Johnson',
       role: 'CEO & Founder',
-      bio: 'Sarah has over 15 years of experience in renewable energy and sustainable technology. She founded SolarFlow with the vision of making clean energy accessible to everyone.',
+      bio: 'Sarah has over 15 years of experience in renewable energy and sustainable technology. She founded MEA-Energy with the vision of making clean energy accessible to everyone.',
       image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
       linkedin: '#',
       twitter: '#',
-      email: 'sarah@solarflow.com'
+      email: 'sarah@mea-energy.com'
     },
     {
       name: 'Michael Chen',
@@ -19,7 +19,7 @@ const Team = () => {
       image: 'https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
       linkedin: '#',
       twitter: '#',
-      email: 'michael@solarflow.com'
+      email: 'michael@mea-energy.com'
     },
     {
       name: 'Emma Rodriguez',
@@ -28,7 +28,7 @@ const Team = () => {
       image: 'https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
       linkedin: '#',
       twitter: '#',
-      email: 'emma@solarflow.com'
+      email: 'emma@mea-energy.com'
     },
     {
       name: 'David Kumar',
@@ -37,7 +37,7 @@ const Team = () => {
       image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
       linkedin: '#',
       twitter: '#',
-      email: 'david@solarflow.com'
+      email: 'david@mea-energy.com'
     },
     {
       name: 'Lisa Thompson',
@@ -46,7 +46,7 @@ const Team = () => {
       image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
       linkedin: '#',
       twitter: '#',
-      email: 'lisa@solarflow.com'
+      email: 'lisa@mea-energy.com'
     },
     {
       name: 'James Wilson',
@@ -55,7 +55,7 @@ const Team = () => {
       image: 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
       linkedin: '#',
       twitter: '#',
-      email: 'james@solarflow.com'
+      email: 'james@mea-energy.com'
     },
     {
       name: 'Maria Garcia',
@@ -64,7 +64,7 @@ const Team = () => {
       image: 'https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
       linkedin: '#',
       twitter: '#',
-      email: 'maria@solarflow.com'
+      email: 'maria@mea-energy.com'
     },
     {
       name: 'Robert Park',
@@ -73,7 +73,7 @@ const Team = () => {
       image: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
       linkedin: '#',
       twitter: '#',
-      email: 'robert@solarflow.com'
+      email: 'robert@mea-energy.com'
     },
     {
       name: 'Dr. Amanda Foster',
@@ -82,7 +82,7 @@ const Team = () => {
       image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
       linkedin: '#',
       twitter: '#',
-      email: 'amanda@solarflow.com'
+      email: 'amanda@mea-energy.com'
     }
   ];
 
@@ -215,13 +215,13 @@ const Team = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:careers@solarflow.com"
+              href="mailto:careers@mea-energy.com"
               className="bg-white text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
             >
               View Open Positions
             </a>
             <a
-              href="mailto:careers@solarflow.com"
+              href="mailto:careers@mea-energy.com"
               className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-green-600 transition-all duration-300"
             >
               Send Your Resume

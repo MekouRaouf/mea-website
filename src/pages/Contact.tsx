@@ -56,7 +56,7 @@ const Contact = () => {
     {
       icon: <Mail className="h-6 w-6" />,
       title: 'Email',
-      details: ['info@solarflow.com', 'support@solarflow.com', 'sales@solarflow.com']
+      details: ['info@mea-energy.com', 'support@mea-energy.com', 'sales@mea-energy.com']
     },
     {
       icon: <Clock className="h-6 w-6" />,

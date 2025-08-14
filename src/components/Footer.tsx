@@ -12,7 +12,7 @@ const Footer = () => {
               <div className="bg-green-600 p-2 rounded-lg">
                 <Zap className="h-6 w-6 text-white" />
               </div>
-              <span className="text-xl font-bold">SolarFlow</span>
+              <span className="text-xl font-bold">MEA-Energy</span>
             </div>
             <p className="text-gray-400 mb-4">
               Empowering communities with affordable solar energy through innovative PayAsYouGo solutions.
@@ -67,7 +67,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-green-400" />
-                <span className="text-gray-400">info@solarflow.com</span>
+                <span className="text-gray-400">info@mea-energy.com</span>
               </li>
             </ul>
           </div>
@@ -76,7 +76,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 SolarFlow. All rights reserved.
+              © 2024 MEA-Energy. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-green-400 text-sm transition-colors">Privacy Policy</a>
