@@ -1,0 +1,309 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "payasyougo": "PayAsYouGo",
+    "team": "Team",
+    "contact": "Contact",
+    "getQuote": "Get Quote"
+  },
+  "home": {
+    "hero": {
+      "title": "Solar Energy",
+      "subtitle": "Made Affordable",
+      "description": "Pay as you save with our revolutionary solar solutions. No upfront costs, just clean energy.",
+      "startJourney": "Start Your Solar Journey",
+      "watchDemo": "Watch Demo"
+    },
+    "stats": {
+      "panelsInstalled": "Solar Panels Installed",
+      "happyCustomers": "Happy Customers",
+      "cleanEnergy": "Clean Energy Generated",
+      "co2Saved": "Tons CO₂ Saved"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "We're on a mission to democratize clean energy access through innovative PayAsYouGo solar solutions. Our technology makes renewable energy affordable and accessible to everyone, regardless of their financial situation.",
+      "features": {
+        "zeroUpfront": "Zero upfront costs",
+        "flexiblePayments": "Flexible payment plans",
+        "professionalInstallation": "Professional installation & maintenance",
+        "monitoring": "24/7 monitoring and support"
+      }
+    },
+    "impact": {
+      "title": "Our Environmental Impact",
+      "description": "Every solar panel we install contributes to a cleaner, more sustainable future for our planet.",
+      "cleanEnergyTitle": "Clean Energy",
+      "cleanEnergyDesc": "Generating 50MW of clean, renewable energy annually",
+      "carbonReductionTitle": "Carbon Reduction",
+      "carbonReductionDesc": "Preventing 100,000 tons of CO₂ emissions yearly",
+      "communityImpactTitle": "Community Impact",
+      "communityImpactDesc": "Empowering 5,000+ families with affordable clean energy"
+    },
+    "investors": {
+      "title": "Backed by Leading Investors",
+      "description": "We're proud to be supported by world-class investors who share our vision for a sustainable future."
+    },
+    "partners": {
+      "title": "Our Strategic Partners",
+      "description": "Working with industry leaders to deliver the best solar solutions."
+    },
+    "team": {
+      "title": "Meet Our Leadership Team",
+      "description": "Experienced professionals driving innovation in renewable energy.",
+      "meetFullTeam": "Meet the Full Team"
+    },
+    "cta": {
+      "title": "Ready to Go Solar?",
+      "description": "Join thousands of satisfied customers who have made the switch to clean, affordable solar energy.",
+      "getFreeQuote": "Get Free Quote",
+      "learnPayAsYouGo": "Learn About PayAsYouGo"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Powering a",
+      "subtitle": "Sustainable Future",
+      "description": "SolarFlow is revolutionizing the renewable energy industry by making solar power accessible to everyone through our innovative PayAsYouGo model. We believe clean energy shouldn't be a luxury – it should be a right.",
+      "founded": "Founded"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "To democratize access to clean, renewable energy by removing financial barriers and providing innovative PayAsYouGo solar solutions that benefit both people and the planet. We're committed to building a sustainable future where everyone can afford clean energy."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To be the leading force in making renewable energy universally accessible, creating a world where clean energy is the norm, not the exception. We envision communities powered by sustainable energy, free from the constraints of traditional utility dependence."
+    },
+    "values": {
+      "title": "Our Core Values",
+      "description": "These values guide every decision we make and every relationship we build.",
+      "innovation": {
+        "title": "Innovation",
+        "description": "We continuously innovate to make solar energy more accessible and efficient for everyone."
+      },
+      "sustainability": {
+        "title": "Sustainability",
+        "description": "Environmental responsibility is at the core of everything we do, from product design to operations."
+      },
+      "community": {
+        "title": "Community",
+        "description": "We believe in empowering communities and making clean energy accessible to all economic levels."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "We maintain the highest standards in product quality, customer service, and installation practices."
+      }
+    },
+    "journey": {
+      "title": "Our Journey",
+      "description": "From startup to industry leader, here's how we've grown and evolved."
+    },
+    "impact": {
+      "title": "Our Impact in Numbers",
+      "description": "See how we're making a difference in communities and the environment.",
+      "statesServed": "States Served"
+    }
+  },
+  "team": {
+    "hero": {
+      "title": "Meet Our",
+      "subtitle": "Expert Team",
+      "description": "Our passionate team of professionals brings together expertise in renewable energy, technology, finance, and operations to deliver exceptional solar solutions."
+    },
+    "leadership": {
+      "title": "Leadership Team",
+      "description": "Experienced leaders driving innovation in renewable energy."
+    },
+    "advisory": {
+      "title": "Advisory Board",
+      "description": "Industry veterans providing strategic guidance and expertise."
+    },
+    "join": {
+      "title": "Join Our Mission",
+      "description": "We're always looking for passionate individuals who want to help us build a sustainable future. Join our team and make a real impact in the renewable energy industry.",
+      "viewPositions": "View Open Positions",
+      "sendResume": "Send Your Resume"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Get in",
+      "subtitle": "Touch",
+      "description": "Ready to start your solar journey? Have questions about our PayAsYouGo solutions? We're here to help you every step of the way."
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "address": "Property Address",
+      "addressPlaceholder": "Where would you like solar panels installed?",
+      "subject": "Subject",
+      "energyBill": "Monthly Energy Bill",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your energy needs and any questions you have...",
+      "sendMessage": "Send Message",
+      "required": "*",
+      "subjects": {
+        "general": "General Inquiry",
+        "quote": "Request Quote",
+        "payasyougo": "PayAsYouGo Information",
+        "support": "Technical Support",
+        "partnership": "Partnership Opportunity"
+      },
+      "energyBillRanges": {
+        "select": "Select range",
+        "0-50": "$0 - $50",
+        "51-100": "$51 - $100",
+        "101-200": "$101 - $200",
+        "201-300": "$201 - $300",
+        "300+": "$300+"
+      }
+    },
+    "info": {
+      "title": "Contact Information",
+      "description": "Our team is ready to help you with your solar energy needs. Contact us through any of the following methods:",
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Business Hours",
+      "guarantee": {
+        "title": "Quick Response Guarantee",
+        "description": "We typically respond to all inquiries within 2 hours during business hours. For urgent matters, please call us directly."
+      }
+    },
+    "map": {
+      "title": "Find Us",
+      "description": "Visit our headquarters or schedule a consultation at your location."
+    },
+    "success": {
+      "title": "Thank You!",
+      "message": "Your message has been sent successfully. We'll get back to you within 24 hours.",
+      "redirecting": "Redirecting you back to the form..."
+    }
+  },
+  "products": {
+    "hero": {
+      "title": "Premium Solar",
+      "subtitle": "Products",
+      "description": "Discover our range of high-quality solar products designed to maximize energy production and provide reliable clean energy for your home or business.",
+      "getQuote": "Get Product Quote",
+      "downloadBrochure": "Download Brochure"
+    },
+    "range": {
+      "title": "Our Product Range",
+      "description": "Premium solar solutions tailored to meet diverse energy needs."
+    },
+    "features": {
+      "title": "Why Choose Our Products",
+      "description": "Advanced technology and superior quality make our solar products the smart choice."
+    },
+    "performance": {
+      "title": "Proven Performance",
+      "description": "Our solar products have been rigorously tested and proven to deliver exceptional performance in real-world conditions. Here's what makes them stand out:",
+      "peakEfficiency": "Peak Efficiency",
+      "yearWarranty": "Year Warranty",
+      "batteryCycles": "Battery Cycles",
+      "customerSatisfaction": "Customer Satisfaction"
+    },
+    "certifications": {
+      "title": "Certifications & Standards",
+      "description": "Our products meet the highest industry standards for quality and safety."
+    },
+    "cta": {
+      "title": "Ready to Choose Your Solar Solution?",
+      "description": "Our experts will help you select the perfect products for your energy needs and budget.",
+      "scheduleConsultation": "Schedule Consultation",
+      "getProductQuote": "Get Product Quote"
+    }
+  },
+  "payasyougo": {
+    "hero": {
+      "title": "Solar Made",
+      "subtitle": "Simple",
+      "description": "Go solar with $0 down and start saving immediately. Our PayAsYouGo model makes clean energy affordable for everyone, with no upfront costs and guaranteed savings.",
+      "calculateSavings": "Calculate My Savings",
+      "learnHow": "Learn How It Works"
+    },
+    "benefits": {
+      "title": "Why Choose PayAsYouGo?",
+      "description": "Experience the freedom of solar energy without the financial burden.",
+      "zeroUpfront": {
+        "title": "Zero Upfront Costs",
+        "description": "Get solar installed with no down payment, no loans, and no credit checks required."
+      },
+      "flexibleTerms": {
+        "title": "Flexible Terms",
+        "description": "Choose from 10, 15, or 20-year plans with the option to purchase your system anytime."
+      },
+      "immediateSavings": {
+        "title": "Immediate Savings",
+        "description": "Start saving on your electricity bills from day one with lower monthly solar payments."
+      },
+      "completeProtection": {
+        "title": "Complete Protection",
+        "description": "Full maintenance, repairs, and insurance included. We handle everything for you."
+      }
+    },
+    "plans": {
+      "title": "Choose Your Plan",
+      "description": "Flexible options designed to fit your home size and energy needs.",
+      "mostPopular": "Most Popular",
+      "perMonth": "per month",
+      "systemSize": "System Size",
+      "idealFor": "Ideal for",
+      "getStarted": "Get Started"
+    },
+    "howItWorks": {
+      "title": "How PayAsYouGo Works",
+      "description": "Simple steps to start your solar journey with zero upfront investment."
+    },
+    "calculator": {
+      "title": "Calculate Your Savings",
+      "description": "See how much you could save with our PayAsYouGo solar solution.",
+      "downPayment": "Down Payment",
+      "billReduction": "Bill Reduction",
+      "warranty": "Warranty",
+      "getCustomQuote": "Get My Custom Quote"
+    },
+    "faqs": {
+      "title": "Frequently Asked Questions",
+      "description": "Get answers to common questions about our PayAsYouGo solar program."
+    },
+    "cta": {
+      "title": "Ready to Go Solar?",
+      "description": "Join thousands of homeowners who have switched to clean, affordable solar energy with our PayAsYouGo program.",
+      "startJourney": "Start Your Solar Journey",
+      "scheduleConsultation": "Schedule Free Consultation"
+    }
+  },
+  "footer": {
+    "description": "Empowering communities with affordable solar energy through innovative PayAsYouGo solutions.",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "solarInstallation": "Solar Installation",
+    "systemMonitoring": "System Monitoring",
+    "maintenance": "Maintenance",
+    "financingOptions": "Financing Options",
+    "contactInfo": "Contact Info",
+    "copyright": "© 2024 SolarFlow. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "contactUs": "Contact Us",
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "close": "Close",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
+  }
+}

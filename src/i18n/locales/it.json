@@ -1,0 +1,309 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Chi Siamo",
+    "products": "Prodotti",
+    "payasyougo": "Paga Come Usi",
+    "team": "Team",
+    "contact": "Contatti",
+    "getQuote": "Richiedi Preventivo"
+  },
+  "home": {
+    "hero": {
+      "title": "Energia Solare",
+      "subtitle": "Resa Accessibile",
+      "description": "Paga mentre risparmi con le nostre soluzioni solari rivoluzionarie. Nessun costo iniziale, solo energia pulita.",
+      "startJourney": "Inizia il Tuo Viaggio Solare",
+      "watchDemo": "Guarda la Demo"
+    },
+    "stats": {
+      "panelsInstalled": "Pannelli Solari Installati",
+      "happyCustomers": "Clienti Soddisfatti",
+      "cleanEnergy": "Energia Pulita Generata",
+      "co2Saved": "Tonnellate CO₂ Risparmiate"
+    },
+    "mission": {
+      "title": "La Nostra Missione",
+      "description": "Siamo in missione per democratizzare l'accesso all'energia pulita attraverso soluzioni solari innovative Paga Come Usi. La nostra tecnologia rende l'energia rinnovabile accessibile e conveniente per tutti, indipendentemente dalla loro situazione finanziaria.",
+      "features": {
+        "zeroUpfront": "Nessun costo iniziale",
+        "flexiblePayments": "Piani di pagamento flessibili",
+        "professionalInstallation": "Installazione e manutenzione professionale",
+        "monitoring": "Monitoraggio e supporto 24/7"
+      }
+    },
+    "impact": {
+      "title": "Il Nostro Impatto Ambientale",
+      "description": "Ogni pannello solare che installiamo contribuisce a un futuro più pulito e sostenibile per il nostro pianeta.",
+      "cleanEnergyTitle": "Energia Pulita",
+      "cleanEnergyDesc": "Generazione di 50MW di energia pulita e rinnovabile annualmente",
+      "carbonReductionTitle": "Riduzione del Carbonio",
+      "carbonReductionDesc": "Prevenzione di 100.000 tonnellate di emissioni di CO₂ all'anno",
+      "communityImpactTitle": "Impatto sulla Comunità",
+      "communityImpactDesc": "Potenziamento di oltre 5.000 famiglie con energia pulita accessibile"
+    },
+    "investors": {
+      "title": "Sostenuti da Investitori Leader",
+      "description": "Siamo orgogliosi di essere supportati da investitori di classe mondiale che condividono la nostra visione per un futuro sostenibile."
+    },
+    "partners": {
+      "title": "I Nostri Partner Strategici",
+      "description": "Lavorando con i leader del settore per fornire le migliori soluzioni solari."
+    },
+    "team": {
+      "title": "Incontra il Nostro Team di Leadership",
+      "description": "Professionisti esperti che guidano l'innovazione nell'energia rinnovabile.",
+      "meetFullTeam": "Incontra Tutto il Team"
+    },
+    "cta": {
+      "title": "Pronto per il Solare?",
+      "description": "Unisciti a migliaia di clienti soddisfatti che hanno fatto il passaggio all'energia solare pulita e conveniente.",
+      "getFreeQuote": "Ottieni Preventivo Gratuito",
+      "learnPayAsYouGo": "Scopri Paga Come Usi"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Alimentare un",
+      "subtitle": "Futuro Sostenibile",
+      "description": "SolarFlow sta rivoluzionando l'industria dell'energia rinnovabile rendendo l'energia solare accessibile a tutti attraverso il nostro modello innovativo Paga Come Usi. Crediamo che l'energia pulita non dovrebbe essere un lusso – dovrebbe essere un diritto.",
+      "founded": "Fondata"
+    },
+    "mission": {
+      "title": "La Nostra Missione",
+      "description": "Democratizzare l'accesso all'energia pulita e rinnovabile rimuovendo le barriere finanziarie e fornendo soluzioni solari innovative Paga Come Usi che beneficiano sia le persone che il pianeta. Siamo impegnati a costruire un futuro sostenibile dove tutti possono permettersi l'energia pulita."
+    },
+    "vision": {
+      "title": "La Nostra Visione",
+      "description": "Essere la forza trainante nel rendere l'energia rinnovabile universalmente accessibile, creando un mondo dove l'energia pulita è la norma, non l'eccezione. Immaginiamo comunità alimentate da energia sostenibile, libere dai vincoli della dipendenza dalle utility tradizionali."
+    },
+    "values": {
+      "title": "I Nostri Valori Fondamentali",
+      "description": "Questi valori guidano ogni decisione che prendiamo e ogni relazione che costruiamo.",
+      "innovation": {
+        "title": "Innovazione",
+        "description": "Innoviamo continuamente per rendere l'energia solare più accessibile ed efficiente per tutti."
+      },
+      "sustainability": {
+        "title": "Sostenibilità",
+        "description": "La responsabilità ambientale è al centro di tutto ciò che facciamo, dalla progettazione del prodotto alle operazioni."
+      },
+      "community": {
+        "title": "Comunità",
+        "description": "Crediamo nel potenziare le comunità e nel rendere l'energia pulita accessibile a tutti i livelli economici."
+      },
+      "excellence": {
+        "title": "Eccellenza",
+        "description": "Manteniamo i più alti standard nella qualità del prodotto, nel servizio clienti e nelle pratiche di installazione."
+      }
+    },
+    "journey": {
+      "title": "Il Nostro Viaggio",
+      "description": "Da startup a leader del settore, ecco come siamo cresciuti ed evoluti."
+    },
+    "impact": {
+      "title": "Il Nostro Impatto in Numeri",
+      "description": "Vedi come stiamo facendo la differenza nelle comunità e nell'ambiente.",
+      "statesServed": "Stati Serviti"
+    }
+  },
+  "team": {
+    "hero": {
+      "title": "Incontra il Nostro",
+      "subtitle": "Team di Esperti",
+      "description": "Il nostro team appassionato di professionisti riunisce competenze in energia rinnovabile, tecnologia, finanza e operazioni per fornire soluzioni solari eccezionali."
+    },
+    "leadership": {
+      "title": "Team di Leadership",
+      "description": "Leader esperti che guidano l'innovazione nell'energia rinnovabile."
+    },
+    "advisory": {
+      "title": "Consiglio Consultivo",
+      "description": "Veterani del settore che forniscono guida strategica e competenza."
+    },
+    "join": {
+      "title": "Unisciti alla Nostra Missione",
+      "description": "Cerchiamo sempre individui appassionati che vogliono aiutarci a costruire un futuro sostenibile. Unisciti al nostro team e fai un impatto reale nell'industria dell'energia rinnovabile.",
+      "viewPositions": "Visualizza Posizioni Aperte",
+      "sendResume": "Invia il Tuo CV"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Mettiti in",
+      "subtitle": "Contatto",
+      "description": "Pronto per iniziare il tuo viaggio solare? Hai domande sulle nostre soluzioni Paga Come Usi? Siamo qui per aiutarti in ogni passo del percorso."
+    },
+    "form": {
+      "title": "Inviaci un Messaggio",
+      "firstName": "Nome",
+      "lastName": "Cognome",
+      "email": "Indirizzo Email",
+      "phone": "Numero di Telefono",
+      "address": "Indirizzo Proprietà",
+      "addressPlaceholder": "Dove vorresti installare i pannelli solari?",
+      "subject": "Oggetto",
+      "energyBill": "Bolletta Energetica Mensile",
+      "message": "Messaggio",
+      "messagePlaceholder": "Raccontaci delle tue esigenze energetiche e di eventuali domande...",
+      "sendMessage": "Invia Messaggio",
+      "required": "*",
+      "subjects": {
+        "general": "Richiesta Generale",
+        "quote": "Richiedi Preventivo",
+        "payasyougo": "Informazioni Paga Come Usi",
+        "support": "Supporto Tecnico",
+        "partnership": "Opportunità di Partnership"
+      },
+      "energyBillRanges": {
+        "select": "Seleziona intervallo",
+        "0-50": "€0 - €50",
+        "51-100": "€51 - €100",
+        "101-200": "€101 - €200",
+        "201-300": "€201 - €300",
+        "300+": "€300+"
+      }
+    },
+    "info": {
+      "title": "Informazioni di Contatto",
+      "description": "Il nostro team è pronto ad aiutarti con le tue esigenze di energia solare. Contattaci attraverso uno dei seguenti metodi:",
+      "address": "Indirizzo",
+      "phone": "Telefono",
+      "email": "Email",
+      "hours": "Orari di Lavoro",
+      "guarantee": {
+        "title": "Garanzia di Risposta Rapida",
+        "description": "Rispondiamo tipicamente a tutte le richieste entro 2 ore durante gli orari di lavoro. Per questioni urgenti, chiamaci direttamente."
+      }
+    },
+    "map": {
+      "title": "Trovaci",
+      "description": "Visita la nostra sede centrale o programma una consulenza nella tua località."
+    },
+    "success": {
+      "title": "Grazie!",
+      "message": "Il tuo messaggio è stato inviato con successo. Ti risponderemo entro 24 ore.",
+      "redirecting": "Reindirizzamento al modulo..."
+    }
+  },
+  "products": {
+    "hero": {
+      "title": "Prodotti Solari",
+      "subtitle": "Premium",
+      "description": "Scopri la nostra gamma di prodotti solari di alta qualità progettati per massimizzare la produzione di energia e fornire energia pulita affidabile per la tua casa o azienda.",
+      "getQuote": "Ottieni Preventivo Prodotto",
+      "downloadBrochure": "Scarica Brochure"
+    },
+    "range": {
+      "title": "La Nostra Gamma di Prodotti",
+      "description": "Soluzioni solari premium su misura per soddisfare diverse esigenze energetiche."
+    },
+    "features": {
+      "title": "Perché Scegliere i Nostri Prodotti",
+      "description": "La tecnologia avanzata e la qualità superiore rendono i nostri prodotti solari la scelta intelligente."
+    },
+    "performance": {
+      "title": "Prestazioni Comprovate",
+      "description": "I nostri prodotti solari sono stati rigorosamente testati e dimostrati per fornire prestazioni eccezionali in condizioni reali. Ecco cosa li distingue:",
+      "peakEfficiency": "Efficienza di Picco",
+      "yearWarranty": "Anni di Garanzia",
+      "batteryCycles": "Cicli Batteria",
+      "customerSatisfaction": "Soddisfazione Cliente"
+    },
+    "certifications": {
+      "title": "Certificazioni e Standard",
+      "description": "I nostri prodotti soddisfano i più alti standard del settore per qualità e sicurezza."
+    },
+    "cta": {
+      "title": "Pronto a Scegliere la Tua Soluzione Solare?",
+      "description": "I nostri esperti ti aiuteranno a selezionare i prodotti perfetti per le tue esigenze energetiche e il tuo budget.",
+      "scheduleConsultation": "Programma Consulenza",
+      "getProductQuote": "Ottieni Preventivo Prodotto"
+    }
+  },
+  "payasyougo": {
+    "hero": {
+      "title": "Solare Reso",
+      "subtitle": "Semplice",
+      "description": "Passa al solare con €0 di anticipo e inizia a risparmiare immediatamente. Il nostro modello Paga Come Usi rende l'energia pulita accessibile a tutti, senza costi iniziali e con risparmi garantiti.",
+      "calculateSavings": "Calcola i Miei Risparmi",
+      "learnHow": "Scopri Come Funziona"
+    },
+    "benefits": {
+      "title": "Perché Scegliere Paga Come Usi?",
+      "description": "Sperimenta la libertà dell'energia solare senza il peso finanziario.",
+      "zeroUpfront": {
+        "title": "Nessun Costo Iniziale",
+        "description": "Fai installare il solare senza anticipo, senza prestiti e senza controlli del credito richiesti."
+      },
+      "flexibleTerms": {
+        "title": "Termini Flessibili",
+        "description": "Scegli tra piani di 10, 15 o 20 anni con l'opzione di acquistare il tuo sistema in qualsiasi momento."
+      },
+      "immediateSavings": {
+        "title": "Risparmi Immediati",
+        "description": "Inizia a risparmiare sulle tue bollette elettriche dal primo giorno con pagamenti solari mensili più bassi."
+      },
+      "completeProtection": {
+        "title": "Protezione Completa",
+        "description": "Manutenzione completa, riparazioni e assicurazione incluse. Ci occupiamo di tutto per te."
+      }
+    },
+    "plans": {
+      "title": "Scegli il Tuo Piano",
+      "description": "Opzioni flessibili progettate per adattarsi alle dimensioni della tua casa e alle esigenze energetiche.",
+      "mostPopular": "Più Popolare",
+      "perMonth": "al mese",
+      "systemSize": "Dimensione Sistema",
+      "idealFor": "Ideale per",
+      "getStarted": "Inizia"
+    },
+    "howItWorks": {
+      "title": "Come Funziona Paga Come Usi",
+      "description": "Passaggi semplici per iniziare il tuo viaggio solare con zero investimento iniziale."
+    },
+    "calculator": {
+      "title": "Calcola i Tuoi Risparmi",
+      "description": "Vedi quanto potresti risparmiare con la nostra soluzione solare Paga Come Usi.",
+      "downPayment": "Anticipo",
+      "billReduction": "Riduzione Bolletta",
+      "warranty": "Garanzia",
+      "getCustomQuote": "Ottieni il Mio Preventivo Personalizzato"
+    },
+    "faqs": {
+      "title": "Domande Frequenti",
+      "description": "Ottieni risposte alle domande comuni sul nostro programma solare Paga Come Usi."
+    },
+    "cta": {
+      "title": "Pronto per il Solare?",
+      "description": "Unisciti a migliaia di proprietari di casa che sono passati all'energia solare pulita e conveniente con il nostro programma Paga Come Usi.",
+      "startJourney": "Inizia il Tuo Viaggio Solare",
+      "scheduleConsultation": "Programma Consulenza Gratuita"
+    }
+  },
+  "footer": {
+    "description": "Potenziare le comunità con energia solare accessibile attraverso soluzioni innovative Paga Come Usi.",
+    "quickLinks": "Link Rapidi",
+    "services": "Servizi",
+    "solarInstallation": "Installazione Solare",
+    "systemMonitoring": "Monitoraggio Sistema",
+    "maintenance": "Manutenzione",
+    "financingOptions": "Opzioni di Finanziamento",
+    "contactInfo": "Info Contatto",
+    "copyright": "© 2024 SolarFlow. Tutti i diritti riservati.",
+    "privacyPolicy": "Politica Privacy",
+    "termsOfService": "Termini di Servizio",
+    "cookiePolicy": "Politica Cookie"
+  },
+  "common": {
+    "learnMore": "Scopri di Più",
+    "getStarted": "Inizia",
+    "contactUs": "Contattaci",
+    "readMore": "Leggi di Più",
+    "viewAll": "Visualizza Tutto",
+    "close": "Chiudi",
+    "loading": "Caricamento...",
+    "error": "Errore",
+    "success": "Successo"
+  }
+}

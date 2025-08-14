@@ -1,13 +1,21 @@
+{/* Hero Banner */}
+      
+
+
+
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { ArrowRight, Sun, TrendingUp, Users, Award, CheckCircle, Play } from 'lucide-react';
 
 const Home = () => {
+  const { t } = useTranslation();
+
   const stats = [
-    { number: '10,000+', label: 'Solar Panels Installed' },
-    { number: '5,000+', label: 'Happy Customers' },
-    { number: '50MW', label: 'Clean Energy Generated' },
-    { number: '100,000', label: 'Tons CO₂ Saved' },
+    { number: '10,000+', label: t('home.stats.panelsInstalled') },
+    { number: '5,000+', label: t('home.stats.happyCustomers') },
+    { number: '50MW', label: t('home.stats.cleanEnergy') },
+    { number: '100,000', label: t('home.stats.co2Saved') },
   ];
 
   const investors = [
@@ -45,39 +53,6 @@ const Home = () => {
   return (
     <div>
       {/* Hero Banner */}
-      {/* <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-green-800 to-green-900">
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: 'url(https://images.pexels.com/photos/2800832/pexels-photo-2800832.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop)'
-          }}
-        ></div>
-        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Solar Energy
-            <span className="block text-green-400">Made Affordable</span>
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-200">
-            Pay as you save with our revolutionary solar solutions. No upfront costs, just clean energy.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/payasyougo"
-              className="bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition-all duration-300 flex items-center justify-center group"
-            >
-              Start Your Solar Journey
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Link>
-            <button className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300 flex items-center justify-center">
-              <Play className="mr-2 h-5 w-5" />
-              Watch Demo
-            </button>
-          </div>
-        </div>
-      </section> */}
-
-      {/* Hero Banner */}
       <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-green-800 to-green-900">
         <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
 
@@ -95,23 +70,23 @@ const Home = () => {
 
         <div className="relative z-20 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Solar Energy
-            <span className="block text-green-400">Made Affordable</span>
+            {t('home.hero.title')}
+            <span className="block text-green-400">{t('home.hero.subtitle')}</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-200">
-            Pay as you save with our revolutionary solar solutions. No upfront costs, just clean energy.
+            {t('home.hero.description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/payasyougo"
               className="bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition-all duration-300 flex items-center justify-center group"
             >
-              Start Your Solar Journey
+              {t('home.hero.startJourney')}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <button className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300 flex items-center justify-center">
               <Play className="mr-2 h-5 w-5" />
-              Watch Demo
+              {t('home.hero.watchDemo')}
             </button>
           </div>
         </div>
@@ -136,27 +111,26 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Mission</h2>
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">{t('home.mission.title')}</h2>
               <p className="text-lg text-gray-600 mb-6">
-                We're on a mission to democratize clean energy access through innovative PayAsYouGo solar solutions. 
-                Our technology makes renewable energy affordable and accessible to everyone, regardless of their financial situation.
+                {t('home.mission.description')}
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
-                  <span className="text-gray-700">Zero upfront costs</span>
+                  <span className="text-gray-700">{t('home.mission.features.zeroUpfront')}</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
-                  <span className="text-gray-700">Flexible payment plans</span>
+                  <span className="text-gray-700">{t('home.mission.features.flexiblePayments')}</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
-                  <span className="text-gray-700">Professional installation & maintenance</span>
+                  <span className="text-gray-700">{t('home.mission.features.professionalInstallation')}</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
-                  <span className="text-gray-700">24/7 monitoring and support</span>
+                  <span className="text-gray-700">{t('home.mission.features.monitoring')}</span>
                 </div>
               </div>
             </div>
@@ -175,9 +149,9 @@ const Home = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Environmental Impact</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('home.impact.title')}</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Every solar panel we install contributes to a cleaner, more sustainable future for our planet.
+              {t('home.impact.description')}
             </p>
           </div>
           
@@ -186,24 +160,24 @@ const Home = () => {
               <div className="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Sun className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Clean Energy</h3>
-              <p className="text-gray-600">Generating 50MW of clean, renewable energy annually</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">{t('home.impact.cleanEnergyTitle')}</h3>
+              <p className="text-gray-600">{t('home.impact.cleanEnergyDesc')}</p>
             </div>
             
             <div className="bg-blue-50 p-8 rounded-lg text-center">
               <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <TrendingUp className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Carbon Reduction</h3>
-              <p className="text-gray-600">Preventing 100,000 tons of CO₂ emissions yearly</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">{t('home.impact.carbonReductionTitle')}</h3>
+              <p className="text-gray-600">{t('home.impact.carbonReductionDesc')}</p>
             </div>
             
             <div className="bg-purple-50 p-8 rounded-lg text-center">
               <div className="bg-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Community Impact</h3>
-              <p className="text-gray-600">Empowering 5,000+ families with affordable clean energy</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">{t('home.impact.communityImpactTitle')}</h3>
+              <p className="text-gray-600">{t('home.impact.communityImpactDesc')}</p>
             </div>
           </div>
         </div>
@@ -213,9 +187,9 @@ const Home = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Backed by Leading Investors</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('home.investors.title')}</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              We're proud to be supported by world-class investors who share our vision for a sustainable future.
+              {t('home.investors.description')}
             </p>
           </div>
           
@@ -238,9 +212,9 @@ const Home = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Strategic Partners</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('home.partners.title')}</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Working with industry leaders to deliver the best solar solutions.
+              {t('home.partners.description')}
             </p>
           </div>
           
@@ -263,9 +237,9 @@ const Home = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Meet Our Leadership Team</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('home.team.title')}</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Experienced professionals driving innovation in renewable energy.
+              {t('home.team.description')}
             </p>
           </div>
           
@@ -290,7 +264,7 @@ const Home = () => {
               to="/team"
               className="inline-flex items-center text-green-600 hover:text-green-700 font-semibold"
             >
-              Meet the Full Team
+              {t('home.team.meetFullTeam')}
               <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </div>
@@ -300,22 +274,22 @@ const Home = () => {
       {/* Contact CTA */}
       <section className="py-20 bg-green-600">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-white mb-6">Ready to Go Solar?</h2>
+          <h2 className="text-4xl font-bold text-white mb-6">{t('home.cta.title')}</h2>
           <p className="text-xl text-green-100 mb-8">
-            Join thousands of satisfied customers who have made the switch to clean, affordable solar energy.
+            {t('home.cta.description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
               className="bg-white text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
             >
-              Get Free Quote
+              {t('home.cta.getFreeQuote')}
             </Link>
             <Link
               to="/payasyougo"
               className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-green-600 transition-all duration-300"
             >
-              Learn About PayAsYouGo
+              {t('home.cta.learnPayAsYouGo')}
             </Link>
           </div>
         </div>

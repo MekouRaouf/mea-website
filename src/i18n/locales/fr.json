@@ -1,0 +1,309 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "products": "Produits",
+    "payasyougo": "Paiement à l'usage",
+    "team": "Équipe",
+    "contact": "Contact",
+    "getQuote": "Obtenir un devis"
+  },
+  "home": {
+    "hero": {
+      "title": "Énergie Solaire",
+      "subtitle": "Rendue Abordable",
+      "description": "Payez au fur et à mesure que vous économisez avec nos solutions solaires révolutionnaires. Aucun coût initial, juste de l'énergie propre.",
+      "startJourney": "Commencez Votre Parcours Solaire",
+      "watchDemo": "Voir la Démo"
+    },
+    "stats": {
+      "panelsInstalled": "Panneaux Solaires Installés",
+      "happyCustomers": "Clients Satisfaits",
+      "cleanEnergy": "Énergie Propre Générée",
+      "co2Saved": "Tonnes CO₂ Économisées"
+    },
+    "mission": {
+      "title": "Notre Mission",
+      "description": "Nous avons pour mission de démocratiser l'accès à l'énergie propre grâce à des solutions solaires innovantes de paiement à l'usage. Notre technologie rend l'énergie renouvelable abordable et accessible à tous, quelle que soit leur situation financière.",
+      "features": {
+        "zeroUpfront": "Aucun coût initial",
+        "flexiblePayments": "Plans de paiement flexibles",
+        "professionalInstallation": "Installation et maintenance professionnelles",
+        "monitoring": "Surveillance et support 24/7"
+      }
+    },
+    "impact": {
+      "title": "Notre Impact Environnemental",
+      "description": "Chaque panneau solaire que nous installons contribue à un avenir plus propre et plus durable pour notre planète.",
+      "cleanEnergyTitle": "Énergie Propre",
+      "cleanEnergyDesc": "Génération de 50MW d'énergie propre et renouvelable annuellement",
+      "carbonReductionTitle": "Réduction Carbone",
+      "carbonReductionDesc": "Prévention de 100 000 tonnes d'émissions de CO₂ par an",
+      "communityImpactTitle": "Impact Communautaire",
+      "communityImpactDesc": "Autonomisation de plus de 5 000 familles avec une énergie propre abordable"
+    },
+    "investors": {
+      "title": "Soutenus par des Investisseurs de Premier Plan",
+      "description": "Nous sommes fiers d'être soutenus par des investisseurs de classe mondiale qui partagent notre vision d'un avenir durable."
+    },
+    "partners": {
+      "title": "Nos Partenaires Stratégiques",
+      "description": "Travailler avec les leaders de l'industrie pour offrir les meilleures solutions solaires."
+    },
+    "team": {
+      "title": "Rencontrez Notre Équipe de Direction",
+      "description": "Des professionnels expérimentés qui stimulent l'innovation dans les énergies renouvelables.",
+      "meetFullTeam": "Rencontrer Toute l'Équipe"
+    },
+    "cta": {
+      "title": "Prêt à Passer au Solaire ?",
+      "description": "Rejoignez des milliers de clients satisfaits qui ont fait le passage à l'énergie solaire propre et abordable.",
+      "getFreeQuote": "Obtenir un Devis Gratuit",
+      "learnPayAsYouGo": "En Savoir Plus sur le Paiement à l'Usage"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Alimenter un",
+      "subtitle": "Avenir Durable",
+      "description": "SolarFlow révolutionne l'industrie des énergies renouvelables en rendant l'énergie solaire accessible à tous grâce à notre modèle innovant de paiement à l'usage. Nous croyons que l'énergie propre ne devrait pas être un luxe – elle devrait être un droit.",
+      "founded": "Fondé"
+    },
+    "mission": {
+      "title": "Notre Mission",
+      "description": "Démocratiser l'accès à l'énergie propre et renouvelable en supprimant les barrières financières et en fournissant des solutions solaires innovantes de paiement à l'usage qui profitent à la fois aux personnes et à la planète. Nous nous engageons à construire un avenir durable où chacun peut se permettre une énergie propre."
+    },
+    "vision": {
+      "title": "Notre Vision",
+      "description": "Être la force motrice pour rendre l'énergie renouvelable universellement accessible, créant un monde où l'énergie propre est la norme, pas l'exception. Nous envisageons des communautés alimentées par une énergie durable, libres des contraintes de la dépendance aux services publics traditionnels."
+    },
+    "values": {
+      "title": "Nos Valeurs Fondamentales",
+      "description": "Ces valeurs guident chaque décision que nous prenons et chaque relation que nous construisons.",
+      "innovation": {
+        "title": "Innovation",
+        "description": "Nous innovons continuellement pour rendre l'énergie solaire plus accessible et efficace pour tous."
+      },
+      "sustainability": {
+        "title": "Durabilité",
+        "description": "La responsabilité environnementale est au cœur de tout ce que nous faisons, de la conception des produits aux opérations."
+      },
+      "community": {
+        "title": "Communauté",
+        "description": "Nous croyons en l'autonomisation des communautés et en rendant l'énergie propre accessible à tous les niveaux économiques."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "Nous maintenons les plus hauts standards en matière de qualité des produits, de service client et de pratiques d'installation."
+      }
+    },
+    "journey": {
+      "title": "Notre Parcours",
+      "description": "De startup à leader de l'industrie, voici comment nous avons grandi et évolué."
+    },
+    "impact": {
+      "title": "Notre Impact en Chiffres",
+      "description": "Voyez comment nous faisons la différence dans les communautés et l'environnement.",
+      "statesServed": "États Desservis"
+    }
+  },
+  "team": {
+    "hero": {
+      "title": "Rencontrez Notre",
+      "subtitle": "Équipe d'Experts",
+      "description": "Notre équipe passionnée de professionnels rassemble une expertise en énergies renouvelables, technologie, finance et opérations pour offrir des solutions solaires exceptionnelles."
+    },
+    "leadership": {
+      "title": "Équipe de Direction",
+      "description": "Des leaders expérimentés qui stimulent l'innovation dans les énergies renouvelables."
+    },
+    "advisory": {
+      "title": "Conseil Consultatif",
+      "description": "Des vétérans de l'industrie fournissant des conseils stratégiques et une expertise."
+    },
+    "join": {
+      "title": "Rejoignez Notre Mission",
+      "description": "Nous recherchons toujours des personnes passionnées qui veulent nous aider à construire un avenir durable. Rejoignez notre équipe et ayez un impact réel dans l'industrie des énergies renouvelables.",
+      "viewPositions": "Voir les Postes Ouverts",
+      "sendResume": "Envoyer Votre CV"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Entrer en",
+      "subtitle": "Contact",
+      "description": "Prêt à commencer votre parcours solaire ? Vous avez des questions sur nos solutions de paiement à l'usage ? Nous sommes là pour vous aider à chaque étape."
+    },
+    "form": {
+      "title": "Envoyez-nous un Message",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Adresse Email",
+      "phone": "Numéro de Téléphone",
+      "address": "Adresse de la Propriété",
+      "addressPlaceholder": "Où souhaitez-vous installer des panneaux solaires ?",
+      "subject": "Sujet",
+      "energyBill": "Facture Énergétique Mensuelle",
+      "message": "Message",
+      "messagePlaceholder": "Parlez-nous de vos besoins énergétiques et de toutes vos questions...",
+      "sendMessage": "Envoyer le Message",
+      "required": "*",
+      "subjects": {
+        "general": "Demande Générale",
+        "quote": "Demander un Devis",
+        "payasyougo": "Informations Paiement à l'Usage",
+        "support": "Support Technique",
+        "partnership": "Opportunité de Partenariat"
+      },
+      "energyBillRanges": {
+        "select": "Sélectionner la gamme",
+        "0-50": "0$ - 50$",
+        "51-100": "51$ - 100$",
+        "101-200": "101$ - 200$",
+        "201-300": "201$ - 300$",
+        "300+": "300$+"
+      }
+    },
+    "info": {
+      "title": "Informations de Contact",
+      "description": "Notre équipe est prête à vous aider avec vos besoins en énergie solaire. Contactez-nous par l'une des méthodes suivantes :",
+      "address": "Adresse",
+      "phone": "Téléphone",
+      "email": "Email",
+      "hours": "Heures d'Ouverture",
+      "guarantee": {
+        "title": "Garantie de Réponse Rapide",
+        "description": "Nous répondons généralement à toutes les demandes dans les 2 heures pendant les heures d'ouverture. Pour les questions urgentes, veuillez nous appeler directement."
+      }
+    },
+    "map": {
+      "title": "Nous Trouver",
+      "description": "Visitez notre siège social ou planifiez une consultation à votre emplacement."
+    },
+    "success": {
+      "title": "Merci !",
+      "message": "Votre message a été envoyé avec succès. Nous vous répondrons dans les 24 heures.",
+      "redirecting": "Redirection vers le formulaire..."
+    }
+  },
+  "products": {
+    "hero": {
+      "title": "Produits Solaires",
+      "subtitle": "Premium",
+      "description": "Découvrez notre gamme de produits solaires de haute qualité conçus pour maximiser la production d'énergie et fournir une énergie propre fiable pour votre maison ou votre entreprise.",
+      "getQuote": "Obtenir un Devis Produit",
+      "downloadBrochure": "Télécharger la Brochure"
+    },
+    "range": {
+      "title": "Notre Gamme de Produits",
+      "description": "Solutions solaires premium adaptées pour répondre à divers besoins énergétiques."
+    },
+    "features": {
+      "title": "Pourquoi Choisir Nos Produits",
+      "description": "La technologie avancée et la qualité supérieure font de nos produits solaires le choix intelligent."
+    },
+    "performance": {
+      "title": "Performance Prouvée",
+      "description": "Nos produits solaires ont été rigoureusement testés et prouvés pour offrir des performances exceptionnelles dans des conditions réelles. Voici ce qui les distingue :",
+      "peakEfficiency": "Efficacité Maximale",
+      "yearWarranty": "Ans de Garantie",
+      "batteryCycles": "Cycles de Batterie",
+      "customerSatisfaction": "Satisfaction Client"
+    },
+    "certifications": {
+      "title": "Certifications et Normes",
+      "description": "Nos produits répondent aux plus hauts standards de l'industrie pour la qualité et la sécurité."
+    },
+    "cta": {
+      "title": "Prêt à Choisir Votre Solution Solaire ?",
+      "description": "Nos experts vous aideront à sélectionner les produits parfaits pour vos besoins énergétiques et votre budget.",
+      "scheduleConsultation": "Planifier une Consultation",
+      "getProductQuote": "Obtenir un Devis Produit"
+    }
+  },
+  "payasyougo": {
+    "hero": {
+      "title": "Solaire Rendu",
+      "subtitle": "Simple",
+      "description": "Passez au solaire avec 0$ d'acompte et commencez à économiser immédiatement. Notre modèle de paiement à l'usage rend l'énergie propre abordable pour tous, sans coûts initiaux et avec des économies garanties.",
+      "calculateSavings": "Calculer Mes Économies",
+      "learnHow": "Apprendre Comment Ça Marche"
+    },
+    "benefits": {
+      "title": "Pourquoi Choisir le Paiement à l'Usage ?",
+      "description": "Découvrez la liberté de l'énergie solaire sans le fardeau financier.",
+      "zeroUpfront": {
+        "title": "Aucun Coût Initial",
+        "description": "Faites installer le solaire sans acompte, sans prêt et sans vérification de crédit requise."
+      },
+      "flexibleTerms": {
+        "title": "Conditions Flexibles",
+        "description": "Choisissez parmi des plans de 10, 15 ou 20 ans avec l'option d'acheter votre système à tout moment."
+      },
+      "immediateSavings": {
+        "title": "Économies Immédiates",
+        "description": "Commencez à économiser sur vos factures d'électricité dès le premier jour avec des paiements solaires mensuels plus bas."
+      },
+      "completeProtection": {
+        "title": "Protection Complète",
+        "description": "Maintenance complète, réparations et assurance incluses. Nous nous occupons de tout pour vous."
+      }
+    },
+    "plans": {
+      "title": "Choisissez Votre Plan",
+      "description": "Options flexibles conçues pour s'adapter à la taille de votre maison et à vos besoins énergétiques.",
+      "mostPopular": "Le Plus Populaire",
+      "perMonth": "par mois",
+      "systemSize": "Taille du Système",
+      "idealFor": "Idéal pour",
+      "getStarted": "Commencer"
+    },
+    "howItWorks": {
+      "title": "Comment Fonctionne le Paiement à l'Usage",
+      "description": "Étapes simples pour commencer votre parcours solaire avec zéro investissement initial."
+    },
+    "calculator": {
+      "title": "Calculez Vos Économies",
+      "description": "Voyez combien vous pourriez économiser avec notre solution solaire de paiement à l'usage.",
+      "downPayment": "Acompte",
+      "billReduction": "Réduction de Facture",
+      "warranty": "Garantie",
+      "getCustomQuote": "Obtenir Mon Devis Personnalisé"
+    },
+    "faqs": {
+      "title": "Questions Fréquemment Posées",
+      "description": "Obtenez des réponses aux questions courantes sur notre programme solaire de paiement à l'usage."
+    },
+    "cta": {
+      "title": "Prêt à Passer au Solaire ?",
+      "description": "Rejoignez des milliers de propriétaires qui ont fait le passage à l'énergie solaire propre et abordable avec notre programme de paiement à l'usage.",
+      "startJourney": "Commencer Votre Parcours Solaire",
+      "scheduleConsultation": "Planifier une Consultation Gratuite"
+    }
+  },
+  "footer": {
+    "description": "Autonomiser les communautés avec une énergie solaire abordable grâce à des solutions innovantes de paiement à l'usage.",
+    "quickLinks": "Liens Rapides",
+    "services": "Services",
+    "solarInstallation": "Installation Solaire",
+    "systemMonitoring": "Surveillance du Système",
+    "maintenance": "Maintenance",
+    "financingOptions": "Options de Financement",
+    "contactInfo": "Informations de Contact",
+    "copyright": "© 2024 SolarFlow. Tous droits réservés.",
+    "privacyPolicy": "Politique de Confidentialité",
+    "termsOfService": "Conditions de Service",
+    "cookiePolicy": "Politique des Cookies"
+  },
+  "common": {
+    "learnMore": "En Savoir Plus",
+    "getStarted": "Commencer",
+    "contactUs": "Nous Contacter",
+    "readMore": "Lire Plus",
+    "viewAll": "Voir Tout",
+    "close": "Fermer",
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès"
+  }
+}

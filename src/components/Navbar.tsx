@@ -1,18 +1,21 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Menu, X, Zap } from 'lucide-react';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Navbar = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
   const navigation = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Products', href: '/products' },
-    { name: 'PayAsYouGo', href: '/payasyougo' },
-    { name: 'Team', href: '/team' },
-    { name: 'Contact', href: '/contact' },
+    { name: t('nav.home'), href: '/' },
+    { name: t('nav.about'), href: '/about' },
+    { name: t('nav.products'), href: '/products' },
+    { name: t('nav.payasyougo'), href: '/payasyougo' },
+    { name: t('nav.team'), href: '/team' },
+    { name: t('nav.contact'), href: '/contact' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -48,12 +51,13 @@ const Navbar = () => {
             </div>
           </div>
           
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center space-x-4">
+            <LanguageSwitcher />
             <Link
               to="/contact"
               className="bg-green-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-green-700 transition-colors duration-200"
             >
-              Get Quote
+              {t('nav.getQuote')}
             </Link>
           </div>
           
@@ -77,13 +81,16 @@ const Navbar = () => {
                 to={item.href}
                 className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
                   isActive(item.href)
-                    ? 'bg-green-100 text-green-700'
+                {t('nav.getQuote')}
                     : 'text-gray-600 hover:text-green-600 hover:bg-green-50'
                 }`}
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
               </Link>
+              <div className="mt-4 px-3">
+                <LanguageSwitcher />
+              </div>
             ))}
             <Link
               to="/contact"
