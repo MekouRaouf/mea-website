@@ -11,7 +11,7 @@ import PayAsYouGo from './pages/PayAsYouGo';
 
 function App() {
   return (
-    <Router>
+    <Router  basename="/mea-website">
       <div className="min-h-screen bg-white">
         <Navbar />
         <main>
