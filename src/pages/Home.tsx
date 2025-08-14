@@ -45,7 +45,7 @@ const Home = () => {
   return (
     <div>
       {/* Hero Banner */}
-      <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-green-800 to-green-900">
+      {/* <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-green-800 to-green-900">
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div 
           className="absolute inset-0 bg-cover bg-center"
@@ -54,6 +54,46 @@ const Home = () => {
           }}
         ></div>
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            Solar Energy
+            <span className="block text-green-400">Made Affordable</span>
+          </h1>
+          <p className="text-xl md:text-2xl mb-8 text-gray-200">
+            Pay as you save with our revolutionary solar solutions. No upfront costs, just clean energy.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              to="/payasyougo"
+              className="bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition-all duration-300 flex items-center justify-center group"
+            >
+              Start Your Solar Journey
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </Link>
+            <button className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300 flex items-center justify-center">
+              <Play className="mr-2 h-5 w-5" />
+              Watch Demo
+            </button>
+          </div>
+        </div>
+      </section> */}
+
+      {/* Hero Banner */}
+      <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-green-800 to-green-900">
+        <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
+
+        {/* Background video */}
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src="https://videos.pexels.com/video-files/2804595/2804595-uhd_2560_1440_24fps.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <div className="relative z-20 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Solar Energy
             <span className="block text-green-400">Made Affordable</span>
