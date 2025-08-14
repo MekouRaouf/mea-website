@@ -81,23 +81,25 @@ const Navbar = () => {
                 to={item.href}
                 className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
                   isActive(item.href)
-                {t('nav.getQuote')}
+                    ? 'bg-green-100 text-green-700'
                     : 'text-gray-600 hover:text-green-600 hover:bg-green-50'
                 }`}
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
               </Link>
-              <div className="mt-4 px-3">
-                <LanguageSwitcher />
-              </div>
             ))}
+
+            <div className="mt-4 px-3">
+              <LanguageSwitcher />
+            </div>
+
             <Link
               to="/contact"
               className="block bg-green-600 text-white px-3 py-2 rounded-md text-base font-medium hover:bg-green-700 transition-colors duration-200 mt-4"
               onClick={() => setIsOpen(false)}
             >
-              Get Quote
+              {t('nav.getQuote')}
             </Link>
           </div>
         </div>
