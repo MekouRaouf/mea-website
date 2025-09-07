@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Zap, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import logo from "../assets/logo2.png";
 
 const Footer = () => {
         const { t } = useTranslation();
@@ -11,12 +12,11 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-1">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="bg-green-600 p-2 rounded-lg">
-                <Zap className="h-6 w-6 text-white" />
-              </div>
-              <span className="text-xl font-bold">MEA SRLS</span>
-            </div>
+            <img
+                  src={logo}
+                  alt="MEA Logo"
+                  className="h-[150px] w-[150px] object-contain"
+              />
             <p className="text-gray-400 mb-4">
               {t('footer.description')}
             </p>

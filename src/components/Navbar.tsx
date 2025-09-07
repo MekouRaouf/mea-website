@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Menu, X, Zap } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
+import logo from "../assets/logo2.png";
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -23,16 +24,17 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white shadow-lg sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  py-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex flex-col items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <div className="bg-green-600 p-2 rounded-lg">
-                <Zap className="h-6 w-6 text-white" />
-              </div>
-              <span className="text-xl font-bold text-gray-900">MEA SRLS</span>
+                <img
+                  src={logo}
+                  alt="MEA Logo"
+                  className="h-[150px] w-[150px] object-contain"
+                />
+              {/* <span className="text-xl font-bold text-gray-900">MEA SRLS</span> */}
             </Link>
-            <div className="text-sl font-bold text-gray-900">Making Energy Available Srls</div>
           </div>
           
           <div className="hidden md:block">
