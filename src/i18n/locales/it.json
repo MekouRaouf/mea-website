@@ -313,6 +313,79 @@
       "scheduleConsultation": "Programma Consulenza Gratuita"
     }
   },
+  "services": {
+    "title": "Servizi Strategici di MEA S.r.l.s.",
+    "subtitle": "Making Energy Available (MEA S.r.l.s.) è un'impresa impegnata nella transizione energetica equa e sostenibile. Con una presenza operativa in Italia e Camerun, MEA agisce come ponte tra Europa e Africa, offrendo soluzioni concrete che uniscono consulenza strategica, ricerca economica applicata e formazione professionale.",
+    "mission": "Sosteniamo clienti pubblici, privati e del terzo settore nel disegno, implementazione e valutazione di progetti energetici ad alto impatto sociale ed economico.",
+    "areas_title": "Le Nostre Aree di Servizio",
+    "areas_subtitle": "Cinque aree specializzate per accompagnare la transizione energetica sostenibile",
+    "service1": {
+      "title": "Market Intelligence Energetica",
+      "objective": "Fornire dati affidabili e analisi approfondite per orientare le scelte strategiche nei settori dell'energia sostenibile e dell'accesso all'energia.",
+      "offerings": [
+        "Analisi della domanda energetica (segmenti domestico, commerciale, pubblico)",
+        "Mappatura dei competitor e delle supply chain locali",
+        "Analisi di trend regolatori, tecnologici e di consumo",
+        "Benchmarking e studi di fattibilità territoriale"
+      ],
+      "clients": "ONG, agenzie di sviluppo, imprese energetiche, enti pubblici, investitori d'impatto",
+      "benefit": "Decisioni strategiche basate su evidenze solide, riducendo i rischi di investimento."
+    },
+    "service2": {
+      "title": "Consulenza Economica e Business Model Energetici",
+      "objective": "Sviluppare modelli economici solidi e sostenibili per l'accesso e la gestione dell'energia.",
+      "offerings": [
+        "Business model personalizzati (PAYGo, mini-grid, CER)",
+        "Analisi di costi, tariffe, ROI, LCOE e break-even",
+        "Proiezioni economico-finanziarie",
+        "Sistemi di contabilità ambientale ed economica"
+      ],
+      "clients": "Start-up, microimprese, ONG operative, operatori di microfinanza",
+      "benefit": "Strumenti pratici che rendono bancabili e scalabili i progetti energetici."
+    },
+    "service3": {
+      "title": "Ricerca e Politiche per l'Energia",
+      "objective": "Supportare lo sviluppo di politiche energetiche inclusive e basate su evidenze scientifiche.",
+      "offerings": [
+        "Studi socioeconomici e mappature energetiche",
+        "Policy brief e linee guida",
+        "Supporto alla definizione di strategie locali e nazionali",
+        "Collaborazioni con università e centri di ricerca"
+      ],
+      "clients": "Ministeri, enti regolatori, università, agenzie multilaterali",
+      "benefit": "Evidenze scientifiche e strumenti concreti per rafforzare la governance energetica."
+    },
+    "service4": {
+      "title": "Consulenza per Cooperazione e Donors",
+      "objective": "Accompagnare i progetti di cooperazione verso efficacia, efficienza e impatto misurabile.",
+      "offerings": [
+        "Progettazione secondo logica Logframe e Teoria del Cambiamento",
+        "Sistemi di monitoraggio e valutazione (M&E) personalizzati",
+        "Elaborazione di proposte per bandi internazionali (UE, AICS, WB, GIZ)",
+        "Facilitazione di partenariati multi-attore e PPP"
+      ],
+      "clients": "ONG internazionali, consorzi di cooperazione, enti locali",
+      "benefit": "Massimizzare l'impatto dei progetti con strumenti avanzati di pianificazione e valutazione."
+    },
+    "service5": {
+      "title": "Formazione e Capacity Building",
+      "objective": "Rafforzare competenze tecniche e manageriali per accelerare la transizione energetica sostenibile.",
+      "offerings": [
+        "Corsi per installatori, tecnici e imprenditori verdi",
+        "Programmi in economia dell'energia, project management e finanza verde",
+        "Formazione blended (in presenza/online) con certificazioni",
+        "Training istituzionali per PA, enti locali e ONG"
+      ],
+      "clients": "Centri di formazione, università, enti pubblici, progetti di inclusione giovanile",
+      "benefit": "Formazione orientata all'occupabilità e allo sviluppo locale."
+    },
+    "cta": {
+      "title": "Pronti a Trasformare il Vostro Progetto Energetico?",
+      "subtitle": "Contattaci per una consulenza personalizzata e scopri come MEA S.r.l.s. può supportare la tua transizione energetica sostenibile.",
+      "consultation": "Richiedi Consulenza",
+      "brochure": "Scarica Brochure"
+    }
+  },
   "footer": {
     "description": "Potenziare le comunità con energia solare accessibile attraverso soluzioni innovative Paga Come Usi.",
     "quickLinks": "Link Rapidi",

@@ -3,6 +3,7 @@
     "home": "Home",
     "about": "About",
     "products": "Products",
+    "services": "Services",
     "payasyougo": "PayAsYouGo",
     "team": "Team",
     "contact": "Contact",
@@ -279,6 +280,79 @@
       "description": "Join thousands of homeowners who have switched to clean, affordable solar energy with our PayAsYouGo program.",
       "startJourney": "Start Your Solar Journey",
       "scheduleConsultation": "Schedule Free Consultation"
+    }
+  },
+  "services": {
+    "title": "Strategic Services of MEA S.r.l.s.",
+    "subtitle": "Making Energy Available (MEA S.r.l.s.) is a company committed to a fair and sustainable energy transition. With an operational presence in Italy and Cameroon, MEA acts as a bridge between Europe and Africa, offering concrete solutions that combine strategic consulting, applied economic research, and professional training.",
+    "mission": "We support public, private, and third sector clients in the design, implementation, and evaluation of energy projects with high social and economic impact.",
+    "areas_title": "Our Service Areas",
+    "areas_subtitle": "Five specialized areas to accompany the sustainable energy transition",
+    "service1": {
+      "title": "Energy Market Intelligence",
+      "objective": "Provide reliable data and in-depth analysis to guide strategic choices in the fields of sustainable energy and energy access.",
+      "offerings": [
+        "Analysis of energy demand (domestic, commercial, public segments)",
+        "Mapping of competitors and local supply chains",
+        "Analysis of regulatory, technological, and consumption trends",
+        "Benchmarking and territorial feasibility studies"
+      ],
+      "clients": "NGOs, development agencies, energy companies, public entities, impact investors",
+      "benefit": "Strategic decisions based on solid evidence, reducing investment risks."
+    },
+    "service2": {
+      "title": "Economic Consulting and Energy Business Models",
+      "objective": "Develop solid and sustainable economic models for energy access and management.",
+      "offerings": [
+        "Customized business models (PAYGo, mini-grid, CER)",
+        "Analysis of costs, tariffs, ROI, LCOE, and break-even",
+        "Economic and financial projections",
+        "Environmental and economic accounting systems"
+      ],
+      "clients": "Start-ups, microenterprises, operational NGOs, microfinance operators",
+      "benefit": "Practical tools that make energy projects bankable and scalable."
+    },
+    "service3": {
+      "title": "Energy Research and Policy",
+      "objective": "Support the development of inclusive energy policies based on scientific evidence.",
+      "offerings": [
+        "Socioeconomic studies and energy mappings",
+        "Policy briefs and guidelines",
+        "Support in defining local and national strategies",
+        "Collaborations with universities and research centers"
+      ],
+      "clients": "Ministries, regulatory bodies, universities, multilateral agencies",
+      "benefit": "Scientific evidence and concrete tools to strengthen energy governance."
+    },
+    "service4": {
+      "title": "Consulting for Cooperation and Donors",
+      "objective": "Guide cooperation projects towards effectiveness, efficiency, and measurable impact.",
+      "offerings": [
+        "Project design using Logframe approach and Theory of Change",
+        "Customized monitoring and evaluation (M&E) systems",
+        "Proposal drafting for international calls (EU, AICS, WB, GIZ)",
+        "Facilitation of multi-stakeholder partnerships and PPPs"
+      ],
+      "clients": "International NGOs, cooperation consortia, local authorities",
+      "benefit": "Maximize project impact with advanced planning and evaluation tools."
+    },
+    "service5": {
+      "title": "Training and Capacity Building",
+      "objective": "Strengthen technical and managerial skills to accelerate the sustainable energy transition.",
+      "offerings": [
+        "Courses for installers, technicians, and green entrepreneurs",
+        "Programs in energy economics, project management, and green finance",
+        "Blended training (in-person/online) with certifications",
+        "Institutional training for public administration, local authorities, and NGOs"
+      ],
+      "clients": "Training centers, universities, public entities, youth inclusion projects",
+      "benefit": "Training focused on employability and local development."
+    },
+    "cta": {
+      "title": "Ready to Transform Your Energy Project?",
+      "subtitle": "Contact us for personalized consulting and discover how MEA S.r.l.s. can support your sustainable energy transition.",
+      "consultation": "Request Consulting",
+      "brochure": "Download Brochure"
     }
   },
   "footer": {

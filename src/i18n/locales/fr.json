@@ -3,6 +3,7 @@
     "home": "Accueil",
     "about": "À propos",
     "products": "Produits",
+    "services": "Services",
     "payasyougo": "Paiement à l'usage",
     "team": "Équipe",
     "contact": "Contact",
@@ -279,6 +280,79 @@
       "description": "Rejoignez des milliers de propriétaires qui ont fait le passage à l'énergie solaire propre et abordable avec notre programme de paiement à l'usage.",
       "startJourney": "Commencer Votre Parcours Solaire",
       "scheduleConsultation": "Planifier une Consultation Gratuite"
+    }
+  },
+  "services": {
+    "title": "Services Stratégiques de MEA S.r.l.s.",
+    "subtitle": "Making Energy Available (MEA S.r.l.s.) est une entreprise engagée dans la transition énergétique équitable et durable. Avec une présence opérationnelle en Italie et au Cameroun, MEA agit comme un pont entre l'Europe et l'Afrique, offrant des solutions concrètes qui allient conseil stratégique, recherche économique appliquée et formation professionnelle.",
+    "mission": "Nous soutenons les clients publics, privés et du tiers secteur dans la conception, la mise en œuvre et l'évaluation de projets énergétiques à fort impact social et économique.",
+    "areas_title": "Nos Domaines de Service",
+    "areas_subtitle": "Cinq domaines spécialisés pour accompagner la transition énergétique durable",
+    "service1": {
+      "title": "Intelligence du Marché Énergétique",
+      "objective": "Fournir des données fiables et des analyses approfondies pour orienter les choix stratégiques dans les secteurs de l'énergie durable et de l'accès à l'énergie.",
+      "offerings": [
+        "Analyse de la demande énergétique (segments domestique, commercial, public)",
+        "Cartographie des concurrents et des chaînes d'approvisionnement locales",
+        "Analyse des tendances réglementaires, technologiques et de consommation",
+        "Benchmarking et études de faisabilité territoriale"
+      ],
+      "clients": "ONG, agences de développement, entreprises énergétiques, entités publiques, investisseurs d'impact",
+      "benefit": "Décisions stratégiques basées sur des preuves solides, réduisant les risques d'investissement."
+    },
+    "service2": {
+      "title": "Conseil Économique et Modèles d'Affaires Énergétiques",
+      "objective": "Développer des modèles économiques solides et durables pour l'accès et la gestion de l'énergie.",
+      "offerings": [
+        "Modèles d'affaires personnalisés (PAYGo, mini-réseau, CER)",
+        "Analyse des coûts, tarifs, ROI, LCOE et seuil de rentabilité",
+        "Projections économico-financières",
+        "Systèmes de comptabilité environnementale et économique"
+      ],
+      "clients": "Start-ups, micro-entreprises, ONG opérationnelles, opérateurs de microfinance",
+      "benefit": "Outils pratiques qui rendent les projets énergétiques bancables et évolutifs."
+    },
+    "service3": {
+      "title": "Recherche et Politiques Énergétiques",
+      "objective": "Soutenir le développement de politiques énergétiques inclusives basées sur des preuves scientifiques.",
+      "offerings": [
+        "Études socioéconomiques et cartographie énergétique",
+        "Notes de politique et lignes directrices",
+        "Soutien à la définition de stratégies locales et nationales",
+        "Collaborations avec universités et centres de recherche"
+      ],
+      "clients": "Ministères, organismes de régulation, universités, agences multilatérales",
+      "benefit": "Preuves scientifiques et outils concrets pour renforcer la gouvernance énergétique."
+    },
+    "service4": {
+      "title": "Conseil en Coopération et Bailleurs",
+      "objective": "Accompagner les projets de coopération vers l'efficacité, l'efficience et l'impact mesurable.",
+      "offerings": [
+        "Conception selon la logique Logframe et Théorie du Changement",
+        "Systèmes de suivi et évaluation (S&E) personnalisés",
+        "Élaboration de propositions pour appels d'offres internationaux (UE, AICS, BM, GIZ)",
+        "Facilitation de partenariats multi-acteurs et PPP"
+      ],
+      "clients": "ONG internationales, consortiums de coopération, entités locales",
+      "benefit": "Maximiser l'impact des projets avec des outils avancés de planification et d'évaluation."
+    },
+    "service5": {
+      "title": "Formation et Renforcement des Capacités",
+      "objective": "Renforcer les compétences techniques et managériales pour accélérer la transition énergétique durable.",
+      "offerings": [
+        "Cours pour installateurs, techniciens et entrepreneurs verts",
+        "Programmes en économie de l'énergie, gestion de projet et finance verte",
+        "Formation mixte (présentiel/en ligne) avec certifications",
+        "Formations institutionnelles pour AP, entités locales et ONG"
+      ],
+      "clients": "Centres de formation, universités, entités publiques, projets d'inclusion jeunesse",
+      "benefit": "Formation orientée vers l'employabilité et le développement local."
+    },
+    "cta": {
+      "title": "Prêt à Transformer Votre Projet Énergétique ?",
+      "subtitle": "Contactez-nous pour un conseil personnalisé et découvrez comment MEA S.r.l.s. peut soutenir votre transition énergétique durable.",
+      "consultation": "Demander une Consultation",
+      "brochure": "Télécharger la Brochure"
     }
   },
   "footer": {

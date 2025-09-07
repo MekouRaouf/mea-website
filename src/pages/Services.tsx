@@ -9,76 +9,51 @@ const Services: React.FC = () => {
     {
       id: 1,
       icon: <BarChart3 className="w-8 h-8" />,
-      title: "Market Intelligence Energetica",
-      objective: "Fornire dati affidabili e analisi approfondite per orientare le scelte strategiche nei settori dell'energia sostenibile e dell'accesso all'energia.",
-      offerings: [
-        "Analisi della domanda energetica (segmenti domestico, commerciale, pubblico)",
-        "Mappatura dei competitor e delle supply chain locali",
-        "Analisi di trend regolatori, tecnologici e di consumo",
-        "Benchmarking e studi di fattibilità territoriale"
-      ],
-      clients: "ONG, agenzie di sviluppo, imprese energetiche, enti pubblici, investitori d'impatto",
-      benefit: "Decisioni strategiche basate su evidenze solide, riducendo i rischi di investimento.",
+      title: t('services.service1.title'),
+      objective: t('services.service1.objective'),
+      offerings: t('services.service1.offerings', { returnObjects: true }) as string[],
+      clients: t('services.service1.clients'),
+      benefit: t('services.service1.benefit'),
       color: "from-blue-500 to-cyan-500"
     },
     {
       id: 2,
       icon: <TrendingUp className="w-8 h-8" />,
-      title: "Consulenza Economica e Business Model Energetici",
-      objective: "Sviluppare modelli economici solidi e sostenibili per l'accesso e la gestione dell'energia.",
-      offerings: [
-        "Business model personalizzati (PAYGo, mini-grid, CER)",
-        "Analisi di costi, tariffe, ROI, LCOE e break-even",
-        "Proiezioni economico-finanziarie",
-        "Sistemi di contabilità ambientale ed economica"
-      ],
-      clients: "Start-up, microimprese, ONG operative, operatori di microfinanza",
-      benefit: "Strumenti pratici che rendono bancabili e scalabili i progetti energetici.",
+      title: t('services.service2.title'),
+      objective: t('services.service2.objective'),
+      offerings: t('services.service2.offerings', { returnObjects: true }) as string[],
+      clients: t('services.service2.clients'),
+      benefit: t('services.service2.benefit'),
       color: "from-green-500 to-emerald-500"
     },
     {
       id: 3,
       icon: <FileText className="w-8 h-8" />,
-      title: "Ricerca e Politiche per l'Energia",
-      objective: "Supportare lo sviluppo di politiche energetiche inclusive e basate su evidenze scientifiche.",
-      offerings: [
-        "Studi socioeconomici e mappature energetiche",
-        "Policy brief e linee guida",
-        "Supporto alla definizione di strategie locali e nazionali",
-        "Collaborazioni con università e centri di ricerca"
-      ],
-      clients: "Ministeri, enti regolatori, università, agenzie multilaterali",
-      benefit: "Evidenze scientifiche e strumenti concreti per rafforzare la governance energetica.",
+      title: t('services.service3.title'),
+      objective: t('services.service3.objective'),
+      offerings: t('services.service3.offerings', { returnObjects: true }) as string[],
+      clients: t('services.service3.clients'),
+      benefit: t('services.service3.benefit'),
       color: "from-purple-500 to-indigo-500"
     },
     {
       id: 4,
       icon: <Globe className="w-8 h-8" />,
-      title: "Consulenza per Cooperazione e Donors",
-      objective: "Accompagnare i progetti di cooperazione verso efficacia, efficienza e impatto misurabile.",
-      offerings: [
-        "Progettazione secondo logica Logframe e Teoria del Cambiamento",
-        "Sistemi di monitoraggio e valutazione (M&E) personalizzati",
-        "Elaborazione di proposte per bandi internazionali (UE, AICS, WB, GIZ)",
-        "Facilitazione di partenariati multi-attore e PPP"
-      ],
-      clients: "ONG internazionali, consorzi di cooperazione, enti locali",
-      benefit: "Massimizzare l'impatto dei progetti con strumenti avanzati di pianificazione e valutazione.",
+      title: t('services.service4.title'),
+      objective: t('services.service4.objective'),
+      offerings: t('services.service4.offerings', { returnObjects: true }) as string[],
+      clients: t('services.service4.clients'),
+      benefit: t('services.service4.benefit'),
       color: "from-orange-500 to-red-500"
     },
     {
       id: 5,
       icon: <GraduationCap className="w-8 h-8" />,
-      title: "Formazione e Capacity Building",
-      objective: "Rafforzare competenze tecniche e manageriali per accelerare la transizione energetica sostenibile.",
-      offerings: [
-        "Corsi per installatori, tecnici e imprenditori verdi",
-        "Programmi in economia dell'energia, project management e finanza verde",
-        "Formazione blended (in presenza/online) con certificazioni",
-        "Training istituzionali per PA, enti locali e ONG"
-      ],
-      clients: "Centri di formazione, università, enti pubblici, progetti di inclusione giovanile",
-      benefit: "Formazione orientata all'occupabilità e allo sviluppo locale.",
+      title: t('services.service5.title'),
+      objective: t('services.service5.objective'),
+      offerings: t('services.service5.offerings', { returnObjects: true }) as string[],
+      clients: t('services.service5.clients'),
+      benefit: t('services.service5.benefit'),
       color: "from-teal-500 to-green-500"
     }
   ];
@@ -91,15 +66,14 @@ const Services: React.FC = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Servizi Strategici di MEA S.r.l.s.
+              {t('services.title')}
             </h1>
             <div className="max-w-4xl mx-auto">
               <p className="text-xl md:text-2xl mb-8 leading-relaxed">
-                Making Energy Available (MEA S.r.l.s.) è un'impresa impegnata nella transizione energetica equa e sostenibile.
+                {t('services.subtitle')}
               </p>
               <p className="text-lg md:text-xl opacity-90 leading-relaxed">
-                Con una presenza operativa in Italia e Camerun, MEA agisce come ponte tra Europa e Africa, 
-                offrendo soluzioni concrete che uniscono consulenza strategica, ricerca economica applicata e formazione professionale.
+                {t('services.mission')}
               </p>
             </div>
           </div>
@@ -114,11 +88,10 @@ const Services: React.FC = () => {
               <Target className="w-8 h-8 text-white" />
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              La Nostra Missione
+              {t('services.areas_title')}
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed">
-              Sosteniamo clienti pubblici, privati e del terzo settore nel disegno, implementazione e valutazione 
-              di progetti energetici ad alto impatto sociale ed economico.
+              {t('services.areas_subtitle')}
             </p>
           </div>
         </div>
@@ -127,15 +100,6 @@ const Services: React.FC = () => {
       {/* Services Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Le Nostre Aree di Servizio
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Cinque aree specializzate per accompagnare la transizione energetica sostenibile
-            </p>
-          </div>
-
           <div className="space-y-16">
             {services.map((service, index) => (
               <div key={service.id} className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300">
@@ -154,7 +118,7 @@ const Services: React.FC = () => {
                       <div className="bg-gray-50 p-6 rounded-xl">
                         <h4 className="font-semibold text-gray-900 mb-3 flex items-center">
                           <Target className="w-5 h-5 mr-2 text-blue-600" />
-                          Obiettivo:
+                          {t('services.service1.objective').includes('Fornire') ? 'Obiettivo:' : 'Objective:'}
                         </h4>
                         <p className="text-gray-700 leading-relaxed">
                           {service.objective}
@@ -168,7 +132,7 @@ const Services: React.FC = () => {
                       <div>
                         <h4 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
                           <Lightbulb className="w-6 h-6 mr-2 text-yellow-500" />
-                          Cosa offriamo:
+                          {t('services.service1.objective').includes('Fornire') ? 'Cosa offriamo:' : 'What we offer:'}
                         </h4>
                         <ul className="space-y-3">
                           {service.offerings.map((offering, idx) => (
@@ -185,7 +149,7 @@ const Services: React.FC = () => {
                         <div className="bg-blue-50 p-6 rounded-xl">
                           <h4 className="font-semibold text-gray-900 mb-3 flex items-center">
                             <Users className="w-5 h-5 mr-2 text-blue-600" />
-                            Clienti:
+                            {t('services.service1.objective').includes('Fornire') ? 'Clienti:' : 'Clients:'}
                           </h4>
                           <p className="text-gray-700 text-sm leading-relaxed">
                             {service.clients}
@@ -194,7 +158,7 @@ const Services: React.FC = () => {
                         <div className="bg-green-50 p-6 rounded-xl">
                           <h4 className="font-semibold text-gray-900 mb-3 flex items-center">
                             <Award className="w-5 h-5 mr-2 text-green-600" />
-                            Beneficio per il cliente:
+                            {t('services.service1.objective').includes('Fornire') ? 'Beneficio per il cliente:' : 'Client benefit:'}
                           </h4>
                           <p className="text-gray-700 text-sm leading-relaxed">
                             {service.benefit}
@@ -214,18 +178,17 @@ const Services: React.FC = () => {
       <section className="py-20 bg-gradient-to-r from-green-600 to-blue-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Pronti a Trasformare il Vostro Progetto Energetico?
+            {t('services.cta.title')}
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Contattaci per una consulenza personalizzata e scopri come MEA S.r.l.s. 
-            può supportare la tua transizione energetica sostenibile.
+            {t('services.cta.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200">
-              Richiedi Consulenza
+              {t('services.cta.consultation')}
             </button>
             <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-200">
-              Scarica Brochure
+              {t('services.cta.brochure')}
             </button>
           </div>
         </div>
