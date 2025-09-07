@@ -118,7 +118,7 @@ const Services: React.FC = () => {
                       <div className="bg-gray-50 p-6 rounded-xl">
                         <h4 className="font-semibold text-gray-900 mb-3 flex items-center">
                           <Target className="w-5 h-5 mr-2 text-blue-600" />
-                          {t('services.service1.objective').includes('Fornire') ? 'Obiettivo:' : 'Objective:'}
+                          {t('services.service1.objective').includes('Fornire') ? 'Obiettivo' : 'Objective'}
                         </h4>
                         <p className="text-gray-700 leading-relaxed">
                           {service.objective}
@@ -132,7 +132,7 @@ const Services: React.FC = () => {
                       <div>
                         <h4 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
                           <Lightbulb className="w-6 h-6 mr-2 text-yellow-500" />
-                          {t('services.service1.objective').includes('Fornire') ? 'Cosa offriamo:' : 'What we offer:'}
+                          {t('services.service1.objective').includes('Fornire') ? 'Cosa offriamo' : 'What we offer'}
                         </h4>
                         <ul className="space-y-3">
                           {service.offerings.map((offering, idx) => (
@@ -149,7 +149,7 @@ const Services: React.FC = () => {
                         <div className="bg-blue-50 p-6 rounded-xl">
                           <h4 className="font-semibold text-gray-900 mb-3 flex items-center">
                             <Users className="w-5 h-5 mr-2 text-blue-600" />
-                            {t('services.service1.objective').includes('Fornire') ? 'Clienti:' : 'Clients:'}
+                            {t('services.service1.objective').includes('Fornire') ? 'Clienti' : 'Clients'}
                           </h4>
                           <p className="text-gray-700 text-sm leading-relaxed">
                             {service.clients}
@@ -158,7 +158,7 @@ const Services: React.FC = () => {
                         <div className="bg-green-50 p-6 rounded-xl">
                           <h4 className="font-semibold text-gray-900 mb-3 flex items-center">
                             <Award className="w-5 h-5 mr-2 text-green-600" />
-                            {t('services.service1.objective').includes('Fornire') ? 'Beneficio per il cliente:' : 'Client benefit:'}
+                            {t('services.service1.objective').includes('Fornire') ? 'Beneficio per il cliente' : 'Client benefit'}
                           </h4>
                           <p className="text-gray-700 text-sm leading-relaxed">
                             {service.benefit}
