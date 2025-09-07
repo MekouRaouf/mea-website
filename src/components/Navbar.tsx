@@ -24,13 +24,14 @@ const Navbar = () => {
     <nav className="bg-white shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex items-center">
+          <div className="flex flex-col items-center">
             <Link to="/" className="flex items-center space-x-2">
               <div className="bg-green-600 p-2 rounded-lg">
                 <Zap className="h-6 w-6 text-white" />
               </div>
-              <span className="text-xl font-bold text-gray-900">MEA-Energy</span>
+              <span className="text-xl font-bold text-gray-900">MEA SRLS</span>
             </Link>
+            <div className="text-sl font-bold text-gray-900">Making Energy Available Srls</div>
           </div>
           
           <div className="hidden md:block">

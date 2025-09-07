@@ -1,6 +1,6 @@
 {
   "nav": {
-    "home": "Home",
+    "home": "Casa",
     "about": "Chi Siamo",
     "products": "Prodotti",
     "payasyougo": "Paga Come Usi",
@@ -10,9 +10,9 @@
   },
   "home": {
     "hero": {
-      "title": "Energia Solare",
-      "subtitle": "Resa Accessibile",
-      "description": "Paga mentre risparmi con le nostre soluzioni solari rivoluzionarie. Nessun costo iniziale, solo energia pulita.",
+      "title": "Energia Accessibile",
+      "subtitle": "A Chiunque E Ovunque",
+      "description": "Combattiamo la povertà energetica nei Paesi in via di sviluppo, mediante l’utilizzo di soluzioni energetiche sostenibili basate su sistemi solari domestici off-grid e stand alone a pagamento flessibile e basso costo, senza la necessità di un investimento iniziale significativo.",
       "startJourney": "Inizia il Tuo Viaggio Solare",
       "watchDemo": "Guarda la Demo"
     },
@@ -24,7 +24,7 @@
     },
     "mission": {
       "title": "La Nostra Missione",
-      "description": "Siamo in missione per democratizzare l'accesso all'energia pulita attraverso soluzioni solari innovative Paga Come Usi. La nostra tecnologia rende l'energia rinnovabile accessibile e conveniente per tutti, indipendentemente dalla loro situazione finanziaria.",
+      "description": "Il dream di MEA è quello di liberare l’energia, rendendo l’energia elettrica ricavabile da quella solare accessibile a chiunque, ovunque. Creare un mondo in cui ogni persona, ovunque si trovi, possa accendere la luce, alimentare le proprie idee e costruire il proprio futuro, grazie all’energia accessibile, flessibile e senza barriere",
       "features": {
         "zeroUpfront": "Nessun costo iniziale",
         "flexiblePayments": "Piani di pagamento flessibili",
@@ -64,42 +64,52 @@
   },
   "about": {
     "hero": {
-      "title": "Alimentare un",
+      "title": "Energia per un",
       "subtitle": "Futuro Sostenibile",
-      "description": "SolarFlow sta rivoluzionando l'industria dell'energia rinnovabile rendendo l'energia solare accessibile a tutti attraverso il nostro modello innovativo Paga Come Usi. Crediamo che l'energia pulita non dovrebbe essere un lusso – dovrebbe essere un diritto.",
-      "founded": "Fondata"
+      "description1": "MEA si impegna a rendere l’accesso all’elettricità semplice e immediato come inviare un messaggio o fare una chiamata, abbattendo i confini della povertà energetica e dando a milioni di famiglie, scuole, ospedali e imprese nei Paesi in via di sviluppo la libertà di crescere, imparare, curare, connettersi.",
+      "description2": "Con MEA, ogni ricarica diventa molto più di un gesto quotidiano: è un atto di democratizzazione dell’energia, un piccolo passo che alimenta grandi cambiamenti in termini di autonomia, educazione, salute e impresa.  Perché l’energia non è un privilegio: è la condizione essenziale per vivere con dignità, crescere con fiducia e costruire liberamente il proprio futuro.",
+      "founded": "Fondata",
+      "customers": "Clienti"
     },
     "mission": {
       "title": "La Nostra Missione",
-      "description": "Democratizzare l'accesso all'energia pulita e rinnovabile rimuovendo le barriere finanziarie e fornendo soluzioni solari innovative Paga Come Usi che beneficiano sia le persone che il pianeta. Siamo impegnati a costruire un futuro sostenibile dove tutti possono permettersi l'energia pulita."
+      "description": "Il dream di MEA è quello di liberare l’energia, rendendo l’energia elettrica ricavabile da quella solare accessibile a chiunque, ovunque. Creare un mondo in cui ogni persona, ovunque si trovi, possa accendere la luce, alimentare le proprie idee e costruire il proprio futuro, grazie all’energia accessibile, flessibile e senza barriere."
     },
     "vision": {
       "title": "La Nostra Visione",
-      "description": "Essere la forza trainante nel rendere l'energia rinnovabile universalmente accessibile, creando un mondo dove l'energia pulita è la norma, non l'eccezione. Immaginiamo comunità alimentate da energia sostenibile, libere dai vincoli della dipendenza dalle utility tradizionali."
+      "description": "Essere la forza trainante che rende l’energia rinnovabile universalmente accessibile, costruendo un futuro in cui l’energia pulita sia la norma e non l’eccezione. Immaginiamo comunità autonome e resilienti, alimentate da energia sostenibile e libere dai vincoli della dipendenza dalle utility tradizionali."
     },
     "values": {
-      "title": "I Nostri Valori Fondamentali",
+      "title": "I valori di MEA",
       "description": "Questi valori guidano ogni decisione che prendiamo e ogni relazione che costruiamo.",
       "innovation": {
         "title": "Innovazione",
-        "description": "Innoviamo continuamente per rendere l'energia solare più accessibile ed efficiente per tutti."
+        "description": "MEA innova costantemente per rendere l’energia rinnovabile più semplice, accessibile ed efficace per tutti, ovunque."
       },
       "sustainability": {
         "title": "Sostenibilità",
-        "description": "La responsabilità ambientale è al centro di tutto ciò che facciamo, dalla progettazione del prodotto alle operazioni."
+        "description": "La responsabilità ambientale e sociale è al cuore di ogni nostra scelta: dalla progettazione delle soluzioni fino alla loro implementazione sul territorio."
       },
       "community": {
         "title": "Comunità",
-        "description": "Crediamo nel potenziare le comunità e nel rendere l'energia pulita accessibile a tutti i livelli economici."
+        "description": "Crediamo nel potere delle comunità. Ogni progetto MEA mira a dare autonomia e opportunità, rendendo l’energia pulita alla portata di tutte le famiglie, scuole e imprese."
       },
       "excellence": {
         "title": "Eccellenza",
-        "description": "Manteniamo i più alti standard nella qualità del prodotto, nel servizio clienti e nelle pratiche di installazione."
+        "description": "Puntiamo sempre ai più alti standard, garantendo qualità dei prodotti, affidabilità dei servizi e pratiche di installazione sicure e durevoli."
       }
     },
     "journey": {
-      "title": "Il Nostro Viaggio",
-      "description": "Da startup a leader del settore, ecco come siamo cresciuti ed evoluti."
+      "title": "MEA Viaggio",
+      "description": "Da startup a leader del settore, ecco come siamo cresciuti ed evoluti.",
+      "2024": {
+        "title": "Premio Start Cup",
+        "description": "MEA vince il Premio Start Cup dell’Università di Genova, ottenendo il primo riconoscimento ufficiale per la sua idea innovativa di accesso inclusivo all’energia."
+      },
+      "2025": {
+        "title": "Fondazione di MEA",
+        "description": "MEA viene ufficialmente fondata con la missione di rendere l’energia rinnovabile accessibile a tutti, unendo innovazione, comunità e sostenibilità."
+      }
     },
     "impact": {
       "title": "Il Nostro Impatto in Numeri",
@@ -115,11 +125,32 @@
     },
     "leadership": {
       "title": "Team di Leadership",
-      "description": "Leader esperti che guidano l'innovazione nell'energia rinnovabile."
+      "description": "Leader esperti che guidano l'innovazione nell'energia rinnovabile.",
+      "leader1": {
+        "role": "CEO e Fondatore",
+        "bio": "Titolare di un Ph.D. in Scienze e Tecnologie del Mare (Curriculum: Logistica e Trasporti), Abdel vanta oltre 7 anni di esperienza nel settore delle energie rinnovabili e delle tecnologie sostenibili. È fondatore e CEO di Making Energy Available (MEA) Srls, impresa nata con la visione di rendere l’energia pulita universalmente accessibile. Il suo percorso integra ricerca, consulenza e innovazione, con particolare attenzione a comunità energetiche rinnovabili, modelli di business pay-as-you-go e sviluppo sostenibile tra Europa e Africa. Con MEA si impegna a promuovere autonomia per famiglie, scuole, ospedali e piccole imprese, trasformando l’accesso all’energia in un motore di crescita, educazione, salute e inclusione."
+      },
+      "leader2": {
+        "role": "Direttore finanziario",
+        "bio": "Il suo percorso integra ricerca, consulenza e innovazione, con particolare attenzione a comunità energetiche rinnovabili, modelli di business pay-as-you-go e sviluppo sostenibile tra Europa e Africa."
+      },
+      "leader3": {
+        "role": "Capo delle Operazioni",
+        "bio": "Il suo percorso integra ricerca, consulenza e innovazione, con particolare attenzione a comunità energetiche rinnovabili, modelli di business pay-as-you-go e sviluppo sostenibile tra Europa e Africa."
+      }
     },
     "advisory": {
       "title": "Consiglio Consultivo",
-      "description": "Veterani del settore che forniscono guida strategica e competenza."
+      "description": "Veterani del settore che forniscono guida strategica e competenza.",
+      "advisor1": {
+        "role": "Consulente per le Politiche Energetiche"
+      },
+      "advisor2": {
+        "role": "Consulente tecnologico"
+      },
+      "advisor3": {
+        "role": "Consulente finanziario"
+      }
     },
     "join": {
       "title": "Unisciti alla Nostra Missione",
@@ -290,7 +321,7 @@
     "maintenance": "Manutenzione",
     "financingOptions": "Opzioni di Finanziamento",
     "contactInfo": "Info Contatto",
-    "copyright": "© 2024 SolarFlow. Tutti i diritti riservati.",
+    "copyright": "© 2025 MEA SRLS. Tutti i diritti riservati.",
     "privacyPolicy": "Politica Privacy",
     "termsOfService": "Termini di Servizio",
     "cookiePolicy": "Politica Cookie"

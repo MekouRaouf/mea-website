@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Zap, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 
 const Footer = () => {
+        const { t } = useTranslation();
+  
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -12,10 +15,10 @@ const Footer = () => {
               <div className="bg-green-600 p-2 rounded-lg">
                 <Zap className="h-6 w-6 text-white" />
               </div>
-              <span className="text-xl font-bold">MEA-Energy</span>
+              <span className="text-xl font-bold">MEA SRLS</span>
             </div>
             <p className="text-gray-400 mb-4">
-              Empowering communities with affordable solar energy through innovative PayAsYouGo solutions.
+              {t('footer.description')}
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
@@ -34,40 +37,40 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4">{t('footer.quickLinks')}</h3>
             <ul className="space-y-2">
-              <li><Link to="/" className="text-gray-400 hover:text-green-400 transition-colors">Home</Link></li>
-              <li><Link to="/about" className="text-gray-400 hover:text-green-400 transition-colors">About</Link></li>
-              <li><Link to="/products" className="text-gray-400 hover:text-green-400 transition-colors">Products</Link></li>
-              <li><Link to="/payasyougo" className="text-gray-400 hover:text-green-400 transition-colors">PayAsYouGo</Link></li>
-              <li><Link to="/team" className="text-gray-400 hover:text-green-400 transition-colors">Team</Link></li>
+              <li><Link to="/" className="text-gray-400 hover:text-green-400 transition-colors">{t('nav.home')}</Link></li>
+              <li><Link to="/about" className="text-gray-400 hover:text-green-400 transition-colors">{t('nav.about')}</Link></li>
+              <li><Link to="/products" className="text-gray-400 hover:text-green-400 transition-colors">{t('nav.products')}</Link></li>
+              <li><Link to="/payasyougo" className="text-gray-400 hover:text-green-400 transition-colors">{t('nav.payasyougo')}</Link></li>
+              <li><Link to="/team" className="text-gray-400 hover:text-green-400 transition-colors">{t('nav.team')}</Link></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
+            <h3 className="text-lg font-semibold mb-4">{t('footer.services')}</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">Solar Installation</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">System Monitoring</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">Maintenance</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">Financing Options</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">{t('footer.solarInstallation')}</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">{t('footer.systemMonitoring')}</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">{t('footer.maintenance')}</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-green-400 transition-colors">{t('footer.financingOptions')}</a></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
+            <h3 className="text-lg font-semibold mb-4">{t('footer.contactInfo')}</h3>
             <ul className="space-y-3">
               <li className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-green-400" />
-                <span className="text-gray-400">123 Green Energy St, Solar City, SC 12345</span>
+                <span className="text-gray-400">San Lorenzo 5, Genova (GE), Italia</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-green-400" />
-                <span className="text-gray-400">+1 (555) 123-4567</span>
+                <span className="text-gray-400">+39 389 8493 690</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-green-400" />
-                <span className="text-gray-400">info@mea-energy.com</span>
+                <span className="text-gray-400">making.energy@pec.it</span>
               </li>
             </ul>
           </div>
@@ -76,12 +79,12 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 MEA-Energy. All rights reserved.
+              {t('footer.copyright')}
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-gray-400 hover:text-green-400 text-sm transition-colors">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-green-400 text-sm transition-colors">Terms of Service</a>
-              <a href="#" className="text-gray-400 hover:text-green-400 text-sm transition-colors">Cookie Policy</a>
+              <a href="#" className="text-gray-400 hover:text-green-400 text-sm transition-colors">{t('footer.privacyPolicy')}</a>
+              <a href="#" className="text-gray-400 hover:text-green-400 text-sm transition-colors">{t('footer.termsOfService')}</a>
+              <a href="#" className="text-gray-400 hover:text-green-400 text-sm transition-colors">{t('footer.cookiePolicy')}</a>
             </div>
           </div>
         </div>

@@ -1,65 +1,44 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Target, Eye, Award, Users, Lightbulb, Heart } from 'lucide-react';
 
 const About = () => {
+
+  const { t } = useTranslation();
+  
   const values = [
     {
       icon: <Lightbulb className="h-8 w-8" />,
-      title: 'Innovation',
-      description: 'We continuously innovate to make solar energy more accessible and efficient for everyone.'
+      title: t('about.values.innovation.title'),
+      description: t('about.values.innovation.description')
     },
     {
       icon: <Heart className="h-8 w-8" />,
-      title: 'Sustainability',
-      description: 'Environmental responsibility is at the core of everything we do, from product design to operations.'
+      title: t('about.values.sustainability.title'),
+      description: t('about.values.sustainability.description')
     },
     {
       icon: <Users className="h-8 w-8" />,
-      title: 'Community',
-      description: 'We believe in empowering communities and making clean energy accessible to all economic levels.'
+      title: t('about.values.community.title'),
+      description: t('about.values.community.description')
     },
     {
       icon: <Award className="h-8 w-8" />,
-      title: 'Excellence',
-      description: 'We maintain the highest standards in product quality, customer service, and installation practices.'
+      title: t('about.values.excellence.title'),
+      description: t('about.values.excellence.description')
     }
   ];
 
   const timeline = [
     {
-      year: '2018',
-      title: 'Company Founded',
-      description: 'Started with a vision to make solar energy accessible to everyone through innovative financing.'
-    },
-    {
-      year: '2019',
-      title: 'First PayAsYouGo System',
-      description: 'Launched our revolutionary PayAsYouGo solar solution, eliminating upfront costs for customers.'
-    },
-    {
-      year: '2020',
-      title: '1,000 Installations',
-      description: 'Reached our first milestone of 1,000 solar installations across multiple communities.'
-    },
-    {
-      year: '2021',
-      title: 'Series A Funding',
-      description: 'Secured $10M in Series A funding to expand our operations and technology platform.'
-    },
-    {
-      year: '2022',
-      title: 'National Expansion',
-      description: 'Expanded operations to 15 states, bringing clean energy to rural and underserved communities.'
-    },
-    {
-      year: '2023',
-      title: '5,000 Customers',
-      description: 'Celebrated serving over 5,000 satisfied customers with reliable solar energy solutions.'
-    },
-    {
       year: '2024',
-      title: 'AI-Powered Monitoring',
-      description: 'Launched advanced AI-powered system monitoring for optimal performance and maintenance.'
+      title: t('about.journey.2024.title'),
+      description: t('about.journey.2024.description')
+    },
+    {
+      year: '2025',
+      title: t('about.journey.2025.title'),
+      description: t('about.journey.2025.description')
     }
   ];
 
@@ -71,22 +50,23 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-5xl font-bold text-gray-900 mb-6">
-                Powering a 
-                <span className="text-green-600"> Sustainable Future</span>
+                {t('about.hero.title')}
+                <span className="text-green-600"> {t('about.hero.subtitle')}</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8">
-                MEA-Energy is revolutionizing the renewable energy industry by making solar power accessible 
-                to everyone through our innovative PayAsYouGo model. We believe clean energy shouldn't be 
-                a luxury – it should be a right.
+                {t('about.hero.description1')}
+              </p>
+              <p className="text-xl text-gray-600 mb-8">
+                {t('about.hero.description2')}
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-green-600">2018</div>
-                  <div className="text-gray-600">Founded</div>
+                  <div className="text-3xl font-bold text-green-600">2025</div>
+                  <div className="text-gray-600">{t('about.hero.founded')}</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-green-600">5,000+</div>
-                  <div className="text-gray-600">Customers</div>
+                  <div className="text-gray-600">{t('about.hero.customers')}</div>
                 </div>
               </div>
             </div>
@@ -108,25 +88,20 @@ const About = () => {
             <div className="bg-green-50 p-8 rounded-lg">
               <div className="flex items-center mb-4">
                 <Target className="h-8 w-8 text-green-600 mr-3" />
-                <h2 className="text-3xl font-bold text-gray-900">Our Mission</h2>
+                <h2 className="text-3xl font-bold text-gray-900">{t('about.mission.title')}</h2>
               </div>
               <p className="text-lg text-gray-700 leading-relaxed">
-                To democratize access to clean, renewable energy by removing financial barriers 
-                and providing innovative PayAsYouGo solar solutions that benefit both people and the planet. 
-                We're committed to building a sustainable future where everyone can afford clean energy.
+                {t('about.mission.description')}
               </p>
             </div>
             
             <div className="bg-blue-50 p-8 rounded-lg">
               <div className="flex items-center mb-4">
                 <Eye className="h-8 w-8 text-blue-600 mr-3" />
-                <h2 className="text-3xl font-bold text-gray-900">Our Vision</h2>
+                <h2 className="text-3xl font-bold text-gray-900">{t('about.vision.title')}</h2>
               </div>
               <p className="text-lg text-gray-700 leading-relaxed">
-                To be the leading force in making renewable energy universally accessible, 
-                creating a world where clean energy is the norm, not the exception. We envision 
-                communities powered by sustainable energy, free from the constraints of traditional 
-                utility dependence.
+                {t('about.vision.description')}
               </p>
             </div>
           </div>
@@ -137,9 +112,9 @@ const About = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Core Values</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('about.values.title')}</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              These values guide every decision we make and every relationship we build.
+              {t('about.values.description')}.
             </p>
           </div>
           
@@ -159,9 +134,9 @@ const About = () => {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Journey</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('about.journey.title')}</h2>
             <p className="text-lg text-gray-600">
-              From startup to industry leader, here's how we've grown and evolved.
+              {t('about.journey.description')}
             </p>
           </div>
           

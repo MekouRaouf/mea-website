@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle } from 'lucide-react';
 
 const Contact = () => {
+
+      const { t } = useTranslation();
+  
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -45,22 +49,22 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: <MapPin className="h-6 w-6" />,
-      title: 'Address',
-      details: ['123 Green Energy Street', 'Solar City, SC 12345', 'United States']
+      title: t('contact.info.address'),
+      details: ['San Lorenzo 5', 'Genova (GE)', 'Italia']
     },
     {
       icon: <Phone className="h-6 w-6" />,
-      title: 'Phone',
-      details: ['+1 (555) 123-4567', '+1 (555) 123-4568 (Support)']
+      title: t('contact.info.phone'),
+      details: ['+39 389 8493 690']
     },
     {
       icon: <Mail className="h-6 w-6" />,
-      title: 'Email',
-      details: ['info@mea-energy.com', 'support@mea-energy.com', 'sales@mea-energy.com']
+      title: t('contact.info.email'),
+      details: ['making.energy@pec.it']
     },
     {
       icon: <Clock className="h-6 w-6" />,
-      title: 'Business Hours',
+      title: t('contact.info.hours'),
       details: ['Monday - Friday: 8:00 AM - 6:00 PM', 'Saturday: 9:00 AM - 4:00 PM', 'Sunday: Closed']
     }
   ];
@@ -72,12 +76,12 @@ const Contact = () => {
           <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
             <CheckCircle className="h-8 w-8 text-green-600" />
           </div>
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">Thank You!</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">{t('contact.success.title')}</h2>
           <p className="text-gray-600 mb-4">
-            Your message has been sent successfully. We'll get back to you within 24 hours.
+            {t('contact.success.message')}
           </p>
           <div className="text-sm text-gray-500">
-            Redirecting you back to the form...
+            {t('contact.success.redirecting')}
           </div>
         </div>
       </div>
@@ -90,12 +94,11 @@ const Contact = () => {
       <section className="py-20 bg-gradient-to-br from-green-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
-            Get in 
-            <span className="text-green-600"> Touch</span>
+            {t('contact.hero.title')}
+            <span className="text-green-600"> {t('contact.hero.subtitle')}</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ready to start your solar journey? Have questions about our PayAsYouGo solutions? 
-            We're here to help you every step of the way.
+            {t('contact.hero.description')}
           </p>
         </div>
       </section>
@@ -106,12 +109,12 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">{t('contact.form.title')}</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-1">
-                      First Name *
+                      {t('contact.form.firstName')} *
                     </label>
                     <input
                       type="text"
@@ -125,7 +128,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-1">
-                      Last Name *
+                      {t('contact.form.lastName')} *
                     </label>
                     <input
                       type="text"
@@ -142,7 +145,7 @@ const Contact = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                      Email Address *
+                      {t('contact.form.email')} *
                     </label>
                     <input
                       type="email"
@@ -156,7 +159,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                      Phone Number *
+                      {t('contact.form.phone')} *
                     </label>
                     <input
                       type="tel"
@@ -172,7 +175,7 @@ const Contact = () => {
 
                 <div>
                   <label htmlFor="address" className="block text-sm font-medium text-gray-700 mb-1">
-                    Property Address
+                    {t('contact.form.address')}
                   </label>
                   <input
                     type="text"
@@ -180,7 +183,7 @@ const Contact = () => {
                     name="address"
                     value={formData.address}
                     onChange={handleChange}
-                    placeholder="Where would you like solar panels installed?"
+                    placeholder={t('contact.form.addressPlaceholder')}
                     className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
                   />
                 </div>
@@ -188,7 +191,7 @@ const Contact = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
-                      Subject *
+                      {t('contact.form.subject')} *
                     </label>
                     <select
                       id="subject"
@@ -198,16 +201,16 @@ const Contact = () => {
                       required
                       className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
                     >
-                      <option value="general">General Inquiry</option>
-                      <option value="quote">Request Quote</option>
-                      <option value="payasyougo">PayAsYouGo Information</option>
-                      <option value="support">Technical Support</option>
-                      <option value="partnership">Partnership Opportunity</option>
+                      <option value="general">{t('contact.form.subjects.general')}</option>
+                      <option value="quote">{t('contact.form.subjects.quote')}</option>
+                      <option value="payasyougo">{t('contact.form.subjects.payasyougo')}</option>
+                      <option value="support">{t('contact.form.subjects.support')}</option>
+                      <option value="partnership">{t('contact.form.subjects.partnership')}</option>
                     </select>
                   </div>
                   <div>
                     <label htmlFor="energyBill" className="block text-sm font-medium text-gray-700 mb-1">
-                      Monthly Energy Bill
+                      {t('contact.form.energyBill')}
                     </label>
                     <select
                       id="energyBill"
@@ -216,7 +219,7 @@ const Contact = () => {
                       onChange={handleChange}
                       className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
                     >
-                      <option value="">Select range</option>
+                      <option value="">{t('contact.form.energyBillRanges.select')}</option>
                       <option value="0-50">$0 - $50</option>
                       <option value="51-100">$51 - $100</option>
                       <option value="101-200">$101 - $200</option>
@@ -228,7 +231,7 @@ const Contact = () => {
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                    Message *
+                    {t('contact.form.message')} *
                   </label>
                   <textarea
                     id="message"
@@ -237,7 +240,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     rows={4}
-                    placeholder="Tell us about your energy needs and any questions you have..."
+                    placeholder={t('contact.form.messagePlaceholder')}
                     className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
                   ></textarea>
                 </div>
@@ -246,7 +249,7 @@ const Contact = () => {
                   type="submit"
                   className="w-full bg-green-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-green-700 transition-colors duration-300 flex items-center justify-center"
                 >
-                  Send Message
+                  {t('contact.form.sendMessage')}
                   <Send className="ml-2 h-4 w-4" />
                 </button>
               </form>
@@ -254,9 +257,9 @@ const Contact = () => {
 
             {/* Contact Information */}
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Contact Information</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">{t('contact.info.title')}</h2>
               <p className="text-gray-600 mb-8">
-                Our team is ready to help you with your solar energy needs. Contact us through any of the following methods:
+                {t('contact.info.description')}
               </p>
               
               <div className="space-y-6">
@@ -275,10 +278,9 @@ const Contact = () => {
 
               {/* Quick Response Promise */}
               <div className="mt-8 p-4 bg-green-50 rounded-lg">
-                <h3 className="font-semibold text-green-800 mb-2">Quick Response Guarantee</h3>
+                <h3 className="font-semibold text-green-800 mb-2">{t('contact.info.guarantee.title')}</h3>
                 <p className="text-green-700 text-sm">
-                  We typically respond to all inquiries within 2 hours during business hours. 
-                  For urgent matters, please call us directly.
+                  {t('contact.info.guarantee.description')}
                 </p>
               </div>
             </div>
@@ -290,9 +292,9 @@ const Contact = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Find Us</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">{t('contact.map.title')}</h2>
             <p className="text-lg text-gray-600">
-              Visit our headquarters or schedule a consultation at your location.
+              {t('contact.map.description')}
             </p>
           </div>
           
