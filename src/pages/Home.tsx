@@ -29,18 +29,18 @@ const Home = () => {
 
   const teamMembers = [
     {
-      name: 'Sarah Johnson',
-      role: 'CEO & Founder',
+      name: 'Dr. Njikatoufon Abdel Ganir',
+      role: t('team.leadership.leader1.role'),
       image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
     },
     {
       name: 'Michael Chen',
-      role: 'CTO',
+      role: t('team.leadership.leader2.role'),
       image: 'https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
     },
     {
       name: 'Emma Rodriguez',
-      role: 'Head of Operations',
+      role: t('team.leadership.leader3.role'),
       image: 'https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
     },
   ];
