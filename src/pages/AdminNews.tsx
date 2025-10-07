@@ -213,7 +213,7 @@ const AdminNews: React.FC = () => {
         {loading ? (
           <div className="text-center py-8">
             <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-green-600 mx-auto"></div>
-            <p className="mt-2 text-gray-600">Loading articles...</p>
+            <p className="mt-2 text-gray-600">Loading news...</p>
           </div>
         ) : (
           <div className="bg-white rounded-lg shadow overflow-hidden">
@@ -293,7 +293,7 @@ const AdminNews: React.FC = () => {
             
             {news.length === 0 && (
               <div className="text-center py-8">
-                <p className="text-gray-500">No articles found. Create your first article!</p>
+                <p className="text-gray-500">No news found. Create your first news article!</p>
               </div>
             )}
           </div>

@@ -193,7 +193,7 @@ const AdminDashboard: React.FC = () => {
             {/* Recent Articles */}
             <div className="bg-white rounded-lg shadow-md">
               <div className="px-6 py-4 border-b border-gray-200">
-                <h3 className="text-lg font-medium text-gray-900">Recent Articles</h3>
+                <h3 className="text-lg font-medium text-gray-900">Recent News</h3>
               </div>
               <div className="p-6">
                 {loading ? (
@@ -201,7 +201,7 @@ const AdminDashboard: React.FC = () => {
                     <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto"></div>
                   </div>
                 ) : news.length === 0 ? (
-                  <p className="text-gray-500 text-center py-4">No articles found</p>
+                  <p className="text-gray-500 text-center py-4">No news found</p>
                 ) : (
                   <div className="space-y-4">
                     {news.slice(0, 5).map((article) => (
@@ -280,7 +280,7 @@ const AdminDashboard: React.FC = () => {
                   ) : news.length === 0 ? (
                     <tr>
                       <td colSpan={4} className="px-6 py-4 text-center text-gray-500">
-                        No articles found
+                        No news found
                       </td>
                     </tr>
                   ) : (
