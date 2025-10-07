@@ -7,8 +7,12 @@ import About from './pages/About';
 import Team from './pages/Team';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
-import Products from './pages/Products';
+import News from './pages/News';
 import PayAsYouGo from './pages/PayAsYouGo';
+import AdminDashboard from './pages/AdminDashboard';
+import AdminNewsForm from './pages/AdminNewsForm';
+import AdminUserForm from './pages/AdminUserForm';
+import AdminLogin from './pages/AdminLogin';
 
 function App() {
   return (
@@ -21,9 +25,15 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/team" element={<Team />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/news" element={<News />} />
             <Route path="/contact" element={<Contact />} />
             {/* <Route path="/products" element={<Products />} /> */}
             <Route path="/payasyougo" element={<PayAsYouGo />} />
+            <Route path="/admin/login" element={<AdminLogin />} />
+            <Route path="/admin/dashboard" element={<AdminDashboard />} />
+            <Route path="/admin/news/create" element={<AdminNewsForm />} />
+            <Route path="/admin/news/edit/:id" element={<AdminNewsForm />} />
+            <Route path="/admin/users/create" element={<AdminUserForm />} />
           </Routes>
         </main>
         <Footer />
