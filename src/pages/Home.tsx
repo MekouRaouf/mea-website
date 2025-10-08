@@ -131,7 +131,7 @@ const Home = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/433308/pexels-photo-433308.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                src="https://images.pexels.com/photos/5322775/pexels-photo-5322775.jpeg"
                 alt="Solar installation"
                 className="rounded-lg shadow-2xl"
               />
