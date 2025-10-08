@@ -313,6 +313,18 @@
       "benefit": "Practical tools that make energy projects bankable and scalable."
     },
     "service3": {
+      "title": "Economic Consulting and Energy Business Models",
+      "objective": "Develop solid and sustainable economic models for energy access and management.",
+      "offerings": [
+        "Customized business models (PAYGo, mini-grid, CER)",
+        "Analysis of costs, tariffs, ROI, LCOE, and break-even",
+        "Economic and financial projections",
+        "Environmental and economic accounting systems"
+      ],
+      "clients": "Start-ups, microenterprises, operational NGOs, microfinance operators",
+      "benefit": "Practical tools that make energy projects bankable and scalable."
+    },
+    "service4": {
       "title": "Energy Research and Policy",
       "objective": "Support the development of inclusive energy policies based on scientific evidence.",
       "offerings": [
@@ -324,7 +336,7 @@
       "clients": "Ministries, regulatory bodies, universities, multilateral agencies",
       "benefit": "Scientific evidence and concrete tools to strengthen energy governance."
     },
-    "service4": {
+    "service5": {
       "title": "Consulting for Cooperation and Donors",
       "objective": "Guide cooperation projects towards effectiveness, efficiency, and measurable impact.",
       "offerings": [
@@ -336,7 +348,7 @@
       "clients": "International NGOs, cooperation consortia, local authorities",
       "benefit": "Maximize project impact with advanced planning and evaluation tools."
     },
-    "service5": {
+    "service6": {
       "title": "Training and Capacity Building",
       "objective": "Strengthen technical and managerial skills to accelerate the sustainable energy transition.",
       "offerings": [

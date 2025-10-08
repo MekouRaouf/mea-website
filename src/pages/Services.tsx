@@ -38,22 +38,32 @@ const Services: React.FC = () => {
     },
     {
       id: 4,
-      icon: <Globe className="w-8 h-8" />,
+      icon: <FileText className="w-8 h-8" />,
       title: t('services.service4.title'),
       objective: t('services.service4.objective'),
       offerings: t('services.service4.offerings', { returnObjects: true }) as string[],
       clients: t('services.service4.clients'),
       benefit: t('services.service4.benefit'),
-      color: "from-orange-500 to-red-500"
+      color: "from-purple-500 to-indigo-500"
     },
     {
       id: 5,
-      icon: <GraduationCap className="w-8 h-8" />,
+      icon: <Globe className="w-8 h-8" />,
       title: t('services.service5.title'),
       objective: t('services.service5.objective'),
       offerings: t('services.service5.offerings', { returnObjects: true }) as string[],
       clients: t('services.service5.clients'),
       benefit: t('services.service5.benefit'),
+      color: "from-orange-500 to-red-500"
+    },
+    {
+      id: 6,
+      icon: <GraduationCap className="w-8 h-8" />,
+      title: t('services.service6.title'),
+      objective: t('services.service6.objective'),
+      offerings: t('services.service6.offerings', { returnObjects: true }) as string[],
+      clients: t('services.service6.clients'),
+      benefit: t('services.service6.benefit'),
       color: "from-teal-500 to-green-500"
     }
   ];

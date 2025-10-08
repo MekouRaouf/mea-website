@@ -345,6 +345,16 @@
       "benefit": "Strumenti pratici che rendono bancabili e scalabili i progetti energetici."
     },
     "service3": {
+      "title": "Consulenza Manageriale per l’Energia e la Sostenibilità",
+      "objective": "MEA offre consulenza manageriale rivolta a imprese, enti pubblici e organizzazioni del terzo settore che vogliono affrontare la transizione energetica e lo sviluppo sostenibile con una visione strategica e innovativa.",
+      "offerings": [
+        "Strategie energetiche e di sostenibilità: supportiamo la direzione aziendale e le istituzioni nella definizione di piani di sviluppo green e inclusivi",
+        "Modelli organizzativi e finanziari innovativi: introduciamo approcci come il Pay-AsYou-Go e le comunità energetiche per aumentare l’accessibilità e l’efficienza",
+        "Partnership e internazionalizzazione: aiutiamo a costruire ponti tra Europa e Africa, favorendo trasferimento tecnologico, networking e cooperazione",
+        "Progetti ad alto impatto: disegno, implementazione e valutazione di iniziative capaci digenerare valore economico, sociale e ambientale"
+      ]
+    },
+    "service4": {
       "title": "Ricerca e Politiche per l'Energia",
       "objective": "Supportare lo sviluppo di politiche energetiche inclusive e basate su evidenze scientifiche.",
       "offerings": [
@@ -356,7 +366,7 @@
       "clients": "Ministeri, enti regolatori, università, agenzie multilaterali",
       "benefit": "Evidenze scientifiche e strumenti concreti per rafforzare la governance energetica."
     },
-    "service4": {
+    "service5": {
       "title": "Consulenza per Cooperazione e Donors",
       "objective": "Accompagnare i progetti di cooperazione verso efficacia, efficienza e impatto misurabile.",
       "offerings": [
@@ -368,7 +378,7 @@
       "clients": "ONG internazionali, consorzi di cooperazione, enti locali",
       "benefit": "Massimizzare l'impatto dei progetti con strumenti avanzati di pianificazione e valutazione."
     },
-    "service5": {
+    "service6": {
       "title": "Formazione e Capacity Building",
       "objective": "Rafforzare competenze tecniche e manageriali per accelerare la transizione energetica sostenibile.",
       "offerings": [

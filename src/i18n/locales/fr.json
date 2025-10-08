@@ -325,6 +325,18 @@
       "benefit": "Preuves scientifiques et outils concrets pour renforcer la gouvernance énergétique."
     },
     "service4": {
+      "title": "Recherche et Politiques Énergétiques",
+      "objective": "Soutenir le développement de politiques énergétiques inclusives basées sur des preuves scientifiques.",
+      "offerings": [
+        "Études socioéconomiques et cartographie énergétique",
+        "Notes de politique et lignes directrices",
+        "Soutien à la définition de stratégies locales et nationales",
+        "Collaborations avec universités et centres de recherche"
+      ],
+      "clients": "Ministères, organismes de régulation, universités, agences multilatérales",
+      "benefit": "Preuves scientifiques et outils concrets pour renforcer la gouvernance énergétique."
+    },
+    "service5": {
       "title": "Conseil en Coopération et Bailleurs",
       "objective": "Accompagner les projets de coopération vers l'efficacité, l'efficience et l'impact mesurable.",
       "offerings": [
@@ -336,7 +348,7 @@
       "clients": "ONG internationales, consortiums de coopération, entités locales",
       "benefit": "Maximiser l'impact des projets avec des outils avancés de planification et d'évaluation."
     },
-    "service5": {
+    "service6": {
       "title": "Formation et Renforcement des Capacités",
       "objective": "Renforcer les compétences techniques et managériales pour accélérer la transition énergétique durable.",
       "offerings": [
