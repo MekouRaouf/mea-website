@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { BarChart3, Lightbulb, FileText, Users, GraduationCap, Target, TrendingUp, Building, Globe, Award } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const Services: React.FC = () => {
   const { t } = useTranslation();
@@ -70,6 +71,12 @@ const Services: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+
+      <SEO 
+        title="MEA srlz | Services"
+        description="Making Energy Available"
+      />
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-green-600 via-blue-600 to-purple-700 text-white py-20">
         <div className="absolute inset-0 bg-black/20"></div>

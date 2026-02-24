@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Calendar, User, Tag, ArrowLeft, Share2, Clock, MessageCircle, Send } from 'lucide-react';
 import { blogsApiService, WordPressPost, WordPressComment, CommentSubmission } from '../services/blogsApiService';
+import SEO from '../components/SEO';
 
 const BlogPost: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -222,6 +223,10 @@ const BlogPost: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO 
+        title="MEA srlz | Blog"
+        description="Making Energy Available"
+      />
       {/* Navigation */}
       <div className="bg-white border-b">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">

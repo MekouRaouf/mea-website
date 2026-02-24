@@ -18,7 +18,7 @@ import AdminLogin from './pages/AdminLogin';
 
 function App() {
   return (
-    <Router  basename="/">
+    <Router basename="/">
       <div className="min-h-screen bg-white">
         <Navbar />
         <main>

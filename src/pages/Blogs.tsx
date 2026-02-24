@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Search, Calendar, User, Tag, ChevronRight, Loader as Loader2, AlertCircle, ListFilter as Filter } from 'lucide-react';
 import { blogsApiService, WordPressPost, BlogResponse } from '../services/blogsApiService';
+import SEO from '../components/SEO';
 
 const Blogs: React.FC = () => {
   const { t } = useTranslation();
@@ -107,6 +108,11 @@ const Blogs: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO 
+        title="MEA srlz | Blogs"
+        description="Making Energy Available"
+      />
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-green-600 via-blue-600 to-purple-700 text-white py-20">
         <div className="absolute inset-0 bg-black/20"></div>

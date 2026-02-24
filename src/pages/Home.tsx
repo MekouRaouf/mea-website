@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import SEO from '../components/SEO';
 import { ArrowRight, Sun, TrendingUp, Users, Award, CheckCircle, Play } from 'lucide-react';
 
 const Home = () => {
@@ -47,6 +48,11 @@ const Home = () => {
 
   return (
     <div>
+      <SEO 
+        title="MEA srlz | Home"
+        description="Making Energy Available"
+      />
+
       {/* Hero Banner */}
       <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-green-800 to-green-900">
         <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
