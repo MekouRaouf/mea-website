@@ -8,6 +8,8 @@ import Team from './pages/Team';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import News from './pages/News';
+import Blogs from './pages/Blogs';
+import BlogPost from './pages/BlogPost';
 import PayAsYouGo from './pages/PayAsYouGo';
 import AdminDashboard from './pages/AdminDashboard';
 import AdminNewsForm from './pages/AdminNewsForm';
@@ -16,7 +18,7 @@ import AdminLogin from './pages/AdminLogin';
 
 function App() {
   return (
-    <Router  basename="/mea-website">
+    <Router  basename="/">
       <div className="min-h-screen bg-white">
         <Navbar />
         <main>
@@ -26,6 +28,8 @@ function App() {
             <Route path="/team" element={<Team />} />
             <Route path="/services" element={<Services />} />
             <Route path="/news" element={<News />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/blogs/:slug" element={<BlogPost />} />
             <Route path="/contact" element={<Contact />} />
             {/* <Route path="/products" element={<Products />} /> */}
             <Route path="/payasyougo" element={<PayAsYouGo />} />
