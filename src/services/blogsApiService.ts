@@ -227,6 +227,8 @@ class BlogsApiService {
       const queryParams = new URLSearchParams();
       
       queryParams.append('post', postId.toString());
+      queryParams.append('_', Date.now().toString());
+      
       if (params?.page) queryParams.append('page', params.page.toString());
       if (params?.per_page) queryParams.append('per_page', params.per_page.toString());
       if (params?.order) queryParams.append('order', params.order);
@@ -337,19 +339,6 @@ class BlogsApiService {
     return null;
   }
 
-  getCategories(post: WordPressPost): WordPressTerm[] {
-    if (post._embedded?.['wp:term']?.[0]) {
-      return post._embedded['wp:term'][0].filter(term => term.taxonomy === 'category');
-    }
-    return [];
-  }
-
-  getTags(post: WordPressPost): WordPressTerm[] {
-    if (post._embedded?.['wp:term']?.[1]) {
-      return post._embedded['wp:term'][1].filter(term => term.taxonomy === 'post_tag');
-    }
-    return [];
-  }
 }
 
 export const blogsApiService = new BlogsApiService();

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Calendar, User, Tag, ArrowLeft, Share2, Clock, MessageCircle, Send } from 'lucide-react';
 import { blogsApiService, WordPressPost, WordPressComment, CommentSubmission } from '../services/blogsApiService';
-import SEO from '../components/SEO';
 
 const BlogPost: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -28,10 +27,15 @@ const BlogPost: React.FC = () => {
     }
   }, [slug]);
 
+  // Poll for new comments every 30 seconds
   useEffect(() => {
-    if (post) {
-      fetchComments(post.id);
-    }
+    if (!post) return;
+
+    fetchComments(post.id);
+
+    const interval = setInterval(() => fetchComments(post.id), 30000);
+
+    return () => clearInterval(interval);
   }, [post]);
 
   const fetchPost = async (postSlug: string) => {
@@ -82,7 +86,7 @@ const BlogPost: React.FC = () => {
       };
 
       await blogsApiService.submitComment(commentData);
-      
+
       // Reset form
       setCommentForm({
         author_name: '',
@@ -93,10 +97,10 @@ const BlogPost: React.FC = () => {
       });
       setReplyingTo(null);
       setCommentSuccess(true);
-      
-      // Refresh comments
+
+      // Refresh comments immediately after submitting
       await fetchComments(post.id);
-      
+
       // Hide success message after 3 seconds
       setTimeout(() => setCommentSuccess(false), 3000);
     } catch (err) {
@@ -114,8 +118,7 @@ const BlogPost: React.FC = () => {
       parent: commentId,
       content: `@${authorName} `
     }));
-    
-    // Scroll to comment form
+
     const commentFormElement = document.getElementById('comment-form');
     if (commentFormElement) {
       commentFormElement.scrollIntoView({ behavior: 'smooth' });
@@ -150,7 +153,7 @@ const BlogPost: React.FC = () => {
 
   const renderComments = (parentId: number = 0, level: number = 0) => {
     const filteredComments = comments.filter(comment => comment.parent === parentId);
-    
+
     return filteredComments.map(comment => (
       <div key={comment.id} className={`${level > 0 ? 'ml-8 border-l-2 border-gray-200 pl-4' : ''} mb-6`}>
         <div className="bg-gray-50 rounded-lg p-4">
@@ -175,12 +178,12 @@ const BlogPost: React.FC = () => {
               Reply
             </button>
           </div>
-          <div 
+          <div
             className="text-gray-700 prose prose-sm max-w-none"
             dangerouslySetInnerHTML={{ __html: comment.content.rendered }}
           />
         </div>
-        
+
         {/* Render nested comments */}
         {level < 3 && renderComments(comment.id, level + 1)}
       </div>
@@ -223,10 +226,6 @@ const BlogPost: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <SEO 
-        title="MEA srlz | Blog"
-        description="Making Energy Available"
-      />
       {/* Navigation */}
       <div className="bg-white border-b">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -305,9 +304,9 @@ const BlogPost: React.FC = () => {
           )}
         </header>
 
-        {/* Article Content */}
+        {/* Article Content — data-src replaced with src to fix LWS Optimize lazy loading */}
         <div className="prose prose-lg max-w-none mb-12">
-          <div 
+          <div
             className="text-gray-800 leading-relaxed"
             dangerouslySetInnerHTML={{ __html: blogsApiService.sanitizeContent(post.content.rendered) }}
           />
@@ -351,10 +350,10 @@ const BlogPost: React.FC = () => {
                 </button>
               </div>
             )}
-            
+
             {commentSuccess && (
               <div className="mb-4 p-3 bg-green-50 text-green-700 rounded-lg">
-                Comment submitted successfully! It may take a moment to appear.
+                Comment submitted successfully! It may need to be approved before appearing.
               </div>
             )}
 
@@ -435,7 +434,7 @@ const BlogPost: React.FC = () => {
 
           {/* Comments List */}
           <div>
-            {commentsLoading ? (
+            {commentsLoading && comments.length === 0 ? (
               <div className="flex items-center justify-center py-8">
                 <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-green-600 mr-2"></div>
                 <span className="text-gray-600">Loading comments...</span>
