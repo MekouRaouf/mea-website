@@ -309,7 +309,7 @@ const BlogPost: React.FC = () => {
         <div className="prose prose-lg max-w-none mb-12">
           <div 
             className="text-gray-800 leading-relaxed"
-            dangerouslySetInnerHTML={{ __html: post.content.rendered }}
+            dangerouslySetInnerHTML={{ __html: blogsApiService.sanitizeContent(post.content.rendered) }}
           />
         </div>
 

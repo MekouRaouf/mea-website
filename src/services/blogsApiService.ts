@@ -277,18 +277,9 @@ class BlogsApiService {
   }
 
   async getCategories(): Promise<WordPressTerm[]> {
-    try {
-      const response = await fetch(`${this.baseUrl}/categories?per_page=100`);
-      
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      
-      return await response.json();
-    } catch (error) {
-      console.error('Error fetching categories:', error);
-      throw error;
-    }
+    const response = await fetch(`${this.baseUrl}/categories?per_page=100`);
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+    return await response.json(); // plain array, no _embedded
   }
 
   async getTags(): Promise<WordPressTerm[]> {
@@ -333,6 +324,10 @@ class BlogsApiService {
       return post._embedded['wp:featuredmedia'][0].source_url;
     }
     return null;
+  }
+
+  sanitizeContent(html: string): string {
+    return html.replace(/data-src=/g, 'src=');
   }
 
   getAuthor(post: WordPressPost): WordPressAuthor | null {
