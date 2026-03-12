@@ -7,7 +7,7 @@
     "payasyougo": "Paga Come Usi",
     "team": "Squadra",
     "news": "News e Media",
-    "blogs": "Blogs",
+    "blogs": "Blog",
     "contact": "Contatti",
     "getQuote": "Richiedi Preventivo"
   },
@@ -398,6 +398,52 @@
       "subtitle": "Contattaci per una consulenza personalizzata e scopri come MEA S.r.l.s. può supportare la tua transizione energetica sostenibile.",
       "consultation": "Richiedi Consulenza",
       "brochure": "Scarica Brochure"
+    }
+  },
+  "blogs": {
+    "hero": {
+      "title": "Il Nostro Blog",
+      "description": "Approfondimenti, aggiornamenti e storie sull'energia rinnovabile, la sostenibilità e il nostro percorso verso un futuro più pulito"
+    },
+    "featured": "Articoli in evidenza",
+    "search": {
+      "placeholder": "Cerca articoli...",
+      "allCategories": "Tutte le categorie"
+    },
+    "loading": "Caricamento articoli...",
+    "noPostsFound": "Nessun articolo trovato",
+    "noPostsHint": "Prova a modificare i criteri di ricerca o filtro.",
+    "pagination": {
+      "previous": "Precedente",
+      "next": "Successivo"
+    },
+    "post": {
+      "loading": "Caricamento articolo...",
+      "notFound": "Articolo non trovato",
+      "notFoundMessage": "L'articolo del blog richiesto non è stato trovato.",
+      "backToBlog": "Torna al Blog",
+      "backToAll": "Torna a tutti gli articoli",
+      "by": "Di",
+      "minRead": "min di lettura",
+      "share": "Condividi",
+      "linkCopied": "Link copiato negli appunti!",
+      "comments": "Commenti",
+      "noComments": "Ancora nessun commento. Sii il primo a condividere i tuoi pensieri!",
+      "loadingComments": "Caricamento commenti...",
+      "replyingTo": "Risposta al commento",
+      "cancelReply": "Annulla",
+      "reply": "Rispondi",
+      "commentSuccess": "Commento inviato con successo! Potrebbe richiedere un momento prima di apparire.",
+      "commentError": "Invio del commento fallito. Per favore riprova.",
+      "form": {
+        "name": "Nome",
+        "email": "Email",
+        "website": "Sito web (opzionale)",
+        "comment": "Commento",
+        "commentPlaceholder": "Condividi i tuoi pensieri...",
+        "submit": "Pubblica commento",
+        "submitting": "Invio in corso..."
+      }
     }
   },
   "footer": {

@@ -6,7 +6,8 @@
     "services": "Services",
     "payasyougo": "Paiement à l'usage",
     "team": "Équipe",
-    "blogs": "Blogs",
+    "news": "Actualités",
+    "blogs": "Blog",
     "contact": "Contact",
     "getQuote": "Obtenir un devis"
   },
@@ -366,6 +367,52 @@
       "subtitle": "Contactez-nous pour un conseil personnalisé et découvrez comment MEA S.r.l.s. peut soutenir votre transition énergétique durable.",
       "consultation": "Demander une Consultation",
       "brochure": "Télécharger la Brochure"
+    }
+  },
+  "blogs": {
+    "hero": {
+      "title": "Notre Blog",
+      "description": "Actualités, analyses et témoignages sur les énergies renouvelables, la durabilité et notre chemin vers un avenir plus propre"
+    },
+    "featured": "Articles à la une",
+    "search": {
+      "placeholder": "Rechercher des articles...",
+      "allCategories": "Toutes les catégories"
+    },
+    "loading": "Chargement des articles...",
+    "noPostsFound": "Aucun article trouvé",
+    "noPostsHint": "Essayez de modifier vos critères de recherche ou de filtre.",
+    "pagination": {
+      "previous": "Précédent",
+      "next": "Suivant"
+    },
+    "post": {
+      "loading": "Chargement de l'article...",
+      "notFound": "Article introuvable",
+      "notFoundMessage": "L'article de blog demandé est introuvable.",
+      "backToBlog": "Retour au Blog",
+      "backToAll": "Retour à tous les articles",
+      "by": "Par",
+      "minRead": "min de lecture",
+      "share": "Partager",
+      "linkCopied": "Lien copié dans le presse-papiers !",
+      "comments": "Commentaires",
+      "noComments": "Aucun commentaire pour l'instant. Soyez le premier à partager vos pensées !",
+      "loadingComments": "Chargement des commentaires...",
+      "replyingTo": "Répondre au commentaire",
+      "cancelReply": "Annuler",
+      "reply": "Répondre",
+      "commentSuccess": "Commentaire soumis avec succès ! Il peut prendre un moment avant d'apparaître.",
+      "commentError": "Échec de la soumission du commentaire. Veuillez réessayer.",
+      "form": {
+        "name": "Nom",
+        "email": "Email",
+        "website": "Site web (optionnel)",
+        "comment": "Commentaire",
+        "commentPlaceholder": "Partagez vos pensées...",
+        "submit": "Publier le commentaire",
+        "submitting": "Envoi en cours..."
+      }
     }
   },
   "footer": {

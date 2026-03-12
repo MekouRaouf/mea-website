@@ -6,7 +6,8 @@
     "services": "Services",
     "payasyougo": "PayAsYouGo",
     "team": "Team",
-    "blogs": "Blogs",
+    "blogs": "Blog",
+    "news": "News",
     "contact": "Contact",
     "getQuote": "Get Quote"
   },
@@ -366,6 +367,52 @@
       "subtitle": "Contact us for personalized consulting and discover how MEA S.r.l.s. can support your sustainable energy transition.",
       "consultation": "Request Consulting",
       "brochure": "Download Brochure"
+    }
+  },
+  "blogs": {
+    "hero": {
+      "title": "Our Blog",
+      "description": "Insights, updates, and stories about renewable energy, sustainability, and our journey towards a cleaner future"
+    },
+    "featured": "Featured Stories",
+    "search": {
+      "placeholder": "Search blog posts...",
+      "allCategories": "All Categories"
+    },
+    "loading": "Loading posts...",
+    "noPostsFound": "No Posts Found",
+    "noPostsHint": "Try adjusting your search or filter criteria.",
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next"
+    },
+    "post": {
+      "loading": "Loading post...",
+      "notFound": "Post Not Found",
+      "notFoundMessage": "The requested blog post could not be found.",
+      "backToBlog": "Back to Blog",
+      "backToAll": "Back to All Posts",
+      "by": "By",
+      "minRead": "min read",
+      "share": "Share",
+      "linkCopied": "Link copied to clipboard!",
+      "comments": "Comments",
+      "noComments": "No comments yet. Be the first to share your thoughts!",
+      "loadingComments": "Loading comments...",
+      "replyingTo": "Replying to comment",
+      "cancelReply": "Cancel",
+      "reply": "Reply",
+      "commentSuccess": "Comment submitted successfully! It may take a moment to appear.",
+      "commentError": "Failed to submit comment. Please try again.",
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "website": "Website (optional)",
+        "comment": "Comment",
+        "commentPlaceholder": "Share your thoughts...",
+        "submit": "Post Comment",
+        "submitting": "Submitting..."
+      }
     }
   },
   "footer": {

@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Calendar, User, Tag, ArrowLeft, Share2, Clock, MessageCircle, Send } from 'lucide-react';
 import { blogsApiService, WordPressPost, WordPressComment, CommentSubmission } from '../services/blogsApiService';
 
 const BlogPost: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
+  const { t } = useTranslation();
   const [post, setPost] = useState<WordPressPost | null>(null);
   const [comments, setComments] = useState<WordPressComment[]>([]);
   const [loading, setLoading] = useState(true);
@@ -27,14 +29,10 @@ const BlogPost: React.FC = () => {
     }
   }, [slug]);
 
-  // Poll for new comments every 30 seconds
   useEffect(() => {
     if (!post) return;
-
     fetchComments(post.id);
-
     const interval = setInterval(() => fetchComments(post.id), 30000);
-
     return () => clearInterval(interval);
   }, [post]);
 
@@ -87,25 +85,16 @@ const BlogPost: React.FC = () => {
 
       await blogsApiService.submitComment(commentData);
 
-      // Reset form
-      setCommentForm({
-        author_name: '',
-        author_email: '',
-        author_url: '',
-        content: '',
-        parent: 0
-      });
+      setCommentForm({ author_name: '', author_email: '', author_url: '', content: '', parent: 0 });
       setReplyingTo(null);
       setCommentSuccess(true);
 
-      // Refresh comments immediately after submitting
       await fetchComments(post.id);
 
-      // Hide success message after 3 seconds
       setTimeout(() => setCommentSuccess(false), 3000);
     } catch (err) {
       console.error('Error submitting comment:', err);
-      alert('Failed to submit comment. Please try again.');
+      alert(t('blogs.post.commentError'));
     } finally {
       setSubmittingComment(false);
     }
@@ -113,12 +102,7 @@ const BlogPost: React.FC = () => {
 
   const handleReply = (commentId: number, authorName: string) => {
     setReplyingTo(commentId);
-    setCommentForm(prev => ({
-      ...prev,
-      parent: commentId,
-      content: `@${authorName} `
-    }));
-
+    setCommentForm(prev => ({ ...prev, parent: commentId, content: `@${authorName} ` }));
     const commentFormElement = document.getElementById('comment-form');
     if (commentFormElement) {
       commentFormElement.scrollIntoView({ behavior: 'smooth' });
@@ -127,11 +111,7 @@ const BlogPost: React.FC = () => {
 
   const cancelReply = () => {
     setReplyingTo(null);
-    setCommentForm(prev => ({
-      ...prev,
-      parent: 0,
-      content: ''
-    }));
+    setCommentForm(prev => ({ ...prev, parent: 0, content: '' }));
   };
 
   const handleShare = async () => {
@@ -147,12 +127,18 @@ const BlogPost: React.FC = () => {
       }
     } else {
       navigator.clipboard.writeText(window.location.href);
-      alert('Link copied to clipboard!');
+      alert(t('blogs.post.linkCopied'));
     }
   };
 
   const renderComments = (parentId: number = 0, level: number = 0) => {
-    const filteredComments = comments.filter(comment => comment.parent === parentId);
+    const filteredComments = comments.filter(comment => {
+      if (parentId === 0) {
+        const parentExists = comments.some(c => c.id === comment.parent);
+        return comment.parent === 0 || (!parentExists && level === 0);
+      }
+      return comment.parent === parentId;
+    });
 
     return filteredComments.map(comment => (
       <div key={comment.id} className={`${level > 0 ? 'ml-8 border-l-2 border-gray-200 pl-4' : ''} mb-6`}>
@@ -166,16 +152,14 @@ const BlogPost: React.FC = () => {
               />
               <div>
                 <h4 className="font-semibold text-gray-900">{comment.author_name}</h4>
-                <p className="text-sm text-gray-500">
-                  {blogsApiService.formatDate(comment.date)}
-                </p>
+                <p className="text-sm text-gray-500">{blogsApiService.formatDate(comment.date)}</p>
               </div>
             </div>
             <button
               onClick={() => handleReply(comment.id, comment.author_name)}
               className="text-green-600 hover:text-green-700 text-sm font-medium"
             >
-              Reply
+              {t('blogs.post.reply')}
             </button>
           </div>
           <div
@@ -183,8 +167,6 @@ const BlogPost: React.FC = () => {
             dangerouslySetInnerHTML={{ __html: comment.content.rendered }}
           />
         </div>
-
-        {/* Render nested comments */}
         {level < 3 && renderComments(comment.id, level + 1)}
       </div>
     ));
@@ -195,7 +177,7 @@ const BlogPost: React.FC = () => {
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-green-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">Loading post...</p>
+          <p className="text-gray-600">{t('blogs.post.loading')}</p>
         </div>
       </div>
     );
@@ -205,14 +187,14 @@ const BlogPost: React.FC = () => {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Post Not Found</h2>
-          <p className="text-gray-600 mb-6">{error || 'The requested blog post could not be found.'}</p>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">{t('blogs.post.notFound')}</h2>
+          <p className="text-gray-600 mb-6">{error || t('blogs.post.notFoundMessage')}</p>
           <Link
             to="/blogs"
             className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors inline-flex items-center"
           >
             <ArrowLeft className="w-5 h-5 mr-2" />
-            Back to Blog
+            {t('blogs.post.backToBlog')}
           </Link>
         </div>
       </div>
@@ -221,7 +203,7 @@ const BlogPost: React.FC = () => {
 
   const featuredImage = blogsApiService.getFeaturedImage(post);
   const author = blogsApiService.getAuthor(post);
-  const categories = blogsApiService.getCategories(post);
+  const postCategories = blogsApiService.getCategories(post);
   const tags = blogsApiService.getTags(post);
 
   return (
@@ -234,18 +216,18 @@ const BlogPost: React.FC = () => {
             className="inline-flex items-center text-green-600 hover:text-green-700 transition-colors"
           >
             <ArrowLeft className="w-5 h-5 mr-2" />
-            Back to Blog
+            {t('blogs.post.backToBlog')}
           </Link>
         </div>
       </div>
 
-      {/* Article Header */}
+      {/* Article */}
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <header className="mb-8">
           {/* Categories */}
-          {categories.length > 0 && (
+          {postCategories.length > 0 && (
             <div className="mb-4">
-              {categories.map(category => (
+              {postCategories.map(category => (
                 <span key={category.id} className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium mr-2">
                   {category.name}
                 </span>
@@ -263,12 +245,12 @@ const BlogPost: React.FC = () => {
             <div dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
           </div>
 
-          {/* Meta Information */}
+          {/* Meta */}
           <div className="flex flex-wrap items-center gap-6 text-sm text-gray-500 mb-6">
             {author && (
               <div className="flex items-center">
                 <User className="w-4 h-4 mr-2" />
-                <span>By {author.name}</span>
+                <span>{t('blogs.post.by')} {author.name}</span>
               </div>
             )}
             <div className="flex items-center">
@@ -277,18 +259,18 @@ const BlogPost: React.FC = () => {
             </div>
             <div className="flex items-center">
               <Clock className="w-4 h-4 mr-2" />
-              <span>{blogsApiService.estimateReadingTime(post.content.rendered)} min read</span>
+              <span>{blogsApiService.estimateReadingTime(post.content.rendered)} {t('blogs.post.minRead')}</span>
             </div>
             <div className="flex items-center">
               <MessageCircle className="w-4 h-4 mr-2" />
-              <span>{comments.length} comments</span>
+              <span>{comments.length} {t('blogs.post.comments')}</span>
             </div>
             <button
               onClick={handleShare}
               className="flex items-center hover:text-green-600 transition-colors"
             >
               <Share2 className="w-4 h-4 mr-2" />
-              <span>Share</span>
+              <span>{t('blogs.post.share')}</span>
             </button>
           </div>
 
@@ -304,7 +286,7 @@ const BlogPost: React.FC = () => {
           )}
         </header>
 
-        {/* Article Content — data-src replaced with src to fix LWS Optimize lazy loading */}
+        {/* Content */}
         <div className="prose prose-lg max-w-none mb-12">
           <div
             className="text-gray-800 leading-relaxed"
@@ -334,26 +316,23 @@ const BlogPost: React.FC = () => {
         <div className="mt-12 pt-8 border-t border-gray-200">
           <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
             <MessageCircle className="w-6 h-6 mr-2" />
-            Comments ({comments.length})
+            {t('blogs.post.comments')} ({comments.length})
           </h3>
 
           {/* Comment Form */}
           <div id="comment-form" className="mb-8 bg-white p-6 rounded-lg shadow-sm">
             {replyingTo && (
               <div className="mb-4 p-3 bg-blue-50 rounded-lg flex items-center justify-between">
-                <span className="text-blue-700">Replying to comment</span>
-                <button
-                  onClick={cancelReply}
-                  className="text-blue-600 hover:text-blue-800"
-                >
-                  Cancel
+                <span className="text-blue-700">{t('blogs.post.replyingTo')}</span>
+                <button onClick={cancelReply} className="text-blue-600 hover:text-blue-800">
+                  {t('blogs.post.cancelReply')}
                 </button>
               </div>
             )}
 
             {commentSuccess && (
               <div className="mb-4 p-3 bg-green-50 text-green-700 rounded-lg">
-                Comment submitted successfully! It may need to be approved before appearing.
+                {t('blogs.post.commentSuccess')}
               </div>
             )}
 
@@ -361,7 +340,7 @@ const BlogPost: React.FC = () => {
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="author_name" className="block text-sm font-medium text-gray-700 mb-1">
-                    Name *
+                    {t('blogs.post.form.name')} *
                   </label>
                   <input
                     type="text"
@@ -374,7 +353,7 @@ const BlogPost: React.FC = () => {
                 </div>
                 <div>
                   <label htmlFor="author_email" className="block text-sm font-medium text-gray-700 mb-1">
-                    Email *
+                    {t('blogs.post.form.email')} *
                   </label>
                   <input
                     type="email"
@@ -388,7 +367,7 @@ const BlogPost: React.FC = () => {
               </div>
               <div>
                 <label htmlFor="author_url" className="block text-sm font-medium text-gray-700 mb-1">
-                  Website (optional)
+                  {t('blogs.post.form.website')}
                 </label>
                 <input
                   type="url"
@@ -400,7 +379,7 @@ const BlogPost: React.FC = () => {
               </div>
               <div>
                 <label htmlFor="content" className="block text-sm font-medium text-gray-700 mb-1">
-                  Comment *
+                  {t('blogs.post.form.comment')} *
                 </label>
                 <textarea
                   id="content"
@@ -409,7 +388,7 @@ const BlogPost: React.FC = () => {
                   value={commentForm.content}
                   onChange={(e) => setCommentForm(prev => ({ ...prev, content: e.target.value }))}
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                  placeholder="Share your thoughts..."
+                  placeholder={t('blogs.post.form.commentPlaceholder')}
                 />
               </div>
               <button
@@ -420,12 +399,12 @@ const BlogPost: React.FC = () => {
                 {submittingComment ? (
                   <>
                     <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
-                    Submitting...
+                    {t('blogs.post.form.submitting')}
                   </>
                 ) : (
                   <>
                     <Send className="w-4 h-4 mr-2" />
-                    Post Comment
+                    {t('blogs.post.form.submit')}
                   </>
                 )}
               </button>
@@ -434,19 +413,17 @@ const BlogPost: React.FC = () => {
 
           {/* Comments List */}
           <div>
-            {commentsLoading && comments.length === 0 ? (
+            {commentsLoading ? (
               <div className="flex items-center justify-center py-8">
                 <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-green-600 mr-2"></div>
-                <span className="text-gray-600">Loading comments...</span>
+                <span className="text-gray-600">{t('blogs.post.loadingComments')}</span>
               </div>
             ) : comments.length === 0 ? (
               <div className="text-center py-8 text-gray-500">
-                No comments yet. Be the first to share your thoughts!
+                {t('blogs.post.noComments')}
               </div>
             ) : (
-              <div>
-                {renderComments()}
-              </div>
+              <div>{renderComments()}</div>
             )}
           </div>
         </div>
@@ -458,7 +435,7 @@ const BlogPost: React.FC = () => {
             className="bg-gray-100 text-gray-700 px-8 py-3 rounded-lg hover:bg-gray-200 transition-colors inline-flex items-center"
           >
             <ArrowLeft className="w-5 h-5 mr-2" />
-            Back to All Posts
+            {t('blogs.post.backToAll')}
           </Link>
         </div>
       </article>
