@@ -60,7 +60,7 @@ const Contact = () => {
     {
       icon: <Mail className="h-6 w-6" />,
       title: t('contact.info.email'),
-      details: ['making.energy@pec.it']
+      details: ['contact@mea-energy.eu']
     },
     {
       icon: <Clock className="h-6 w-6" />,
