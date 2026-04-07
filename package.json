@@ -8,36 +8,13 @@
     "dev": "vite",
     "build": "vite build",
     "generate:sitemap": "mapify-cli --generate",
-    "postbuild": "react-snap && copy sitemap.xml dist\\ && copy robots.txt dist\\",
+    "postbuild": "node prerender.mjs && copy sitemap.xml dist\\ && copy robots.txt dist\\",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "reactSnap": {
-    "source": "dist",
-    "destinationDir": "dist",
-    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
-    "headless": true,
-    "ignorePageErrors": true,
-    "skipThirdPartyRequests": true,
-    "viewport": {
-      "width": 1440,
-      "height": 900
-    },
-    "routes": [
-      "/",
-      "/about",
-      "/services",
-      "/team",
-      "/contact",
-      "/news",
-      "/blogs",
-      "/payasyougo"
-    ]
-  },
   "dependencies": {
-    "@headlessui/react": "^2.2.9",
     "@supabase/supabase-js": "^2.58.0",
     "@types/react-helmet-async": "^1.0.3",
     "date-fns": "^4.1.0",
