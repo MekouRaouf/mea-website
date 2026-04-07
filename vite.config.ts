@@ -1,20 +1,23 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import prerender from 'vite-plugin-prerender';
 
 export default defineConfig({
-  plugins: [
-    react(),
-    prerender({
-      // List all your public routes
-      routes: ['/', '/about', '/services', '/team', '/contact', '/news', '/blogs', '/payasyougo'],
-      postProcess(renderedRoute) {
-        renderedRoute.html = renderedRoute.html.replace(
-          /<title>[^<]*<\/title>/,
-          `<title>MEA Srlz | Making Energy Available</title>`
-        );
-        return renderedRoute;
-      }
-    })
-  ]
+  base: '/',
+  plugins: [react()],
+  build: {
+    // Force Vite to transpile modern syntax (like ?.) to ES2015
+    target: 'es2015',
+    manifest: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'react-router-dom'],
+          i18n: ['i18next', 'react-i18next'],
+        },
+      },
+    },
+  },
+  preview: {
+    port: 3000,
+  },
 });

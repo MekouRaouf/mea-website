@@ -2,25 +2,16 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
-// Import translation files
 import enTranslations from './locales/en.json';
 import frTranslations from './locales/fr.json';
 import itTranslations from './locales/it.json';
 import arTranslations from './locales/ar.json';
 
 const resources = {
-  en: {
-    translation: enTranslations
-  },
-  fr: {
-    translation: frTranslations
-  },
-  it: {
-    translation: itTranslations
-  },
-  ar: {
-    translation: arTranslations
-  }
+  en: { translation: enTranslations },
+  fr: { translation: frTranslations },
+  it: { translation: itTranslations },
+  ar: { translation: arTranslations }
 };
 
 i18n
@@ -34,8 +25,9 @@ i18n
       escapeValue: false
     },
     detection: {
-      order: ['localStorage', 'navigator', 'htmlTag'],
-      caches: ['localStorage']
+      order: ['localStorage'],
+      caches: ['localStorage'],
+      lookupLocalStorage: 'i18nextLng',
     }
   });
 
