@@ -49,7 +49,7 @@ const Home = () => {
   return (
     <div>
       <SEO 
-        title="MEA srlz | Home"
+        title="MEA SRLS | Home"
         description="Making Energy Available"
       />
 

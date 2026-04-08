@@ -7,7 +7,6 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "generate:sitemap": "mapify-cli --generate",
     "postbuild": "node prerender.mjs && copy sitemap.xml dist\\ && copy robots.txt dist\\",
     "lint": "eslint .",
     "preview": "vite preview",

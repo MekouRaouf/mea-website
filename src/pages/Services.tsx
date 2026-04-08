@@ -73,7 +73,7 @@ const Services: React.FC = () => {
     <div className="min-h-screen bg-gray-50">
 
       <SEO 
-        title="MEA srlz | Services"
+        title="MEA SRLS | Services"
         description="Making Energy Available"
       />
 

@@ -20,10 +20,10 @@ const SEO: React.FC<SEOProps> = ({
   author,
   canonicalUrl
 }) => {
-  const siteTitle = 'MEA Srlz';
+  const siteTitle = 'MEA SRLS';
   const siteUrl = 'https://mea-energy.eu'; // Replace with your actual domain
   const fullTitle = title ? `${title} | ${siteTitle}` : siteTitle;
-  const defaultDescription = 'Making Energy Available - MEA Srlz provides innovative energy solutions';
+  const defaultDescription = 'Making Energy Available - MEA SRLS provides innovative energy solutions';
   
   return (
     <Helmet>

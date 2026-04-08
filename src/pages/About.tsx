@@ -46,7 +46,7 @@ const About = () => {
   return (
     <div className="pt-16">
       <SEO 
-        title="MEA srlz | About"
+        title="MEA SRLS | About"
         description="Making Energy Available"
       />
 
